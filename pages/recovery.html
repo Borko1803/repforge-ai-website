@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore RepForge AI recovery intelligence, Visual AI muscle mapping, fatigue context, progression state and data maturity." />
+  <title>Recovery — RepForge AI</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+</head>
+<body>
+  <header class="nav-wrapper" id="nav">
+    <nav class="nav-inner container">
+      <a href="../index.html" class="nav-logo nav-logo--brand" aria-label="RepForge AI Home">
+        <img src="../assets/images/repforge-anvil-transparent.png" alt="" class="nav-logo__anvil" aria-hidden="true" />
+        <span class="logo-text">RepForge <span>AI</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="training-system.html" class="nav-link">Training System</a></li>
+        <li><a href="performance.html" class="nav-link">Performance</a></li>
+        <li><a href="recovery.html" class="nav-link">Recovery</a></li>
+        <li><a href="community.html" class="nav-link">Community</a></li>
+        <li><a href="features.html" class="nav-link">All Features</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="../index.html" class="btn btn--primary btn--sm">Back Home</a>
+      </div>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false" id="navBurger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-progress" id="navProgress" aria-hidden="true"></div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Navigation">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">✕</button>
+    <ul role="list">
+      <li><a href="training-system.html">Training System</a></li>
+      <li><a href="performance.html">Performance</a></li>
+      <li><a href="recovery.html">Recovery</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="features.html">All Features</a></li>
+    </ul>
+    <div class="mobile-nav__cta">
+      <a href="../index.html" class="btn btn--primary btn--full">Back Home</a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+    <section class="recovery-page-hero">
+      <div class="container">
+        <span class="eyebrow">Recovery Intelligence</span>
+        <h1>Recovery is not<br /><span>one generic score.</span></h1>
+        <p>
+          RepForge keeps systemic recovery and muscle-level training context connected to progression decisions, so readiness can be read with the detail that actual training requires.
+        </p>
+
+        <div class="recovery-page-hero__signals" aria-label="Recovery intelligence signals">
+          <span>Recovery</span>
+          <span>Fatigue</span>
+          <span>Progression State</span>
+          <span>Data Maturity</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="visual-ai-section" id="visual-ai">
+      <div class="container visual-ai-grid">
+        <div class="visual-ai-copy">
+          <span class="eyebrow">Visual AI</span>
+          <h2 class="visual-ai-title">See where the system is ready.<br /><span>And where it is not.</span></h2>
+          <p class="visual-ai-lead">
+            Visual AI turns muscle-level training context into a body view you can read quickly — recovery, fatigue, progression state and data maturity stay connected instead of collapsing into one generic readiness number.
+          </p>
+
+          <div class="visual-ai-points">
+            <div class="visual-ai-point">
+              <span class="visual-ai-point__index">01</span>
+              <div>
+                <strong>Muscle-level context</strong>
+                <p>Open an area and see the recovery and progression story behind the body map.</p>
+              </div>
+            </div>
+            <div class="visual-ai-point">
+              <span class="visual-ai-point__index">02</span>
+              <div>
+                <strong>Progression permission</strong>
+                <p>Ready, Controlled, Blocked and Locked states help separate normal progression from situations that need restraint.</p>
+              </div>
+            </div>
+            <div class="visual-ai-point">
+              <span class="visual-ai-point__index">03</span>
+              <div>
+                <strong>Data context matters</strong>
+                <p>RepForge shows whether the current status is supported by established history or still needs more training data.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-ai-console" aria-label="Illustrative RepForge Visual AI body status">
+          <div class="visual-ai-console__selector">
+            <div>
+              <span class="visual-ai-console__eyebrow">MUSCLE GROUP</span>
+              <strong>Overview</strong>
+              <small>Full body status</small>
+            </div>
+            <span class="visual-ai-console__chevron">⌄</span>
+          </div>
+
+          <div class="visual-ai-bodymap visual-ai-bodymap--images">
+            <figure class="visual-ai-figure">
+              <img
+                src="../assets/images/visual-ai-front-transparent.png"
+                alt="RepForge Visual AI front muscle map"
+                class="visual-ai-figure__image"
+              />
+              <figcaption>Front</figcaption>
+            </figure>
+
+            <figure class="visual-ai-figure">
+              <img
+                src="../assets/images/visual-ai-back-transparent.png"
+                alt="RepForge Visual AI back muscle map"
+                class="visual-ai-figure__image"
+              />
+              <figcaption>Back</figcaption>
+            </figure>
+          </div>
+
+          <div class="visual-ai-hint">
+            <span></span>
+            <p>Tap a muscle area to open detailed intelligence</p>
+          </div>
+
+          <div class="visual-ai-status-card">
+            <span class="visual-ai-console__eyebrow">BODY OVERVIEW</span>
+            <h3>Body Status</h3>
+            <p>Current muscle signals.</p>
+
+            <ul>
+              <li><span></span>Chest recovery 4/100</li>
+              <li><span></span>Fatigue High · Progression Paused</li>
+              <li><span></span>136 sets across 11 days</li>
+            </ul>
+          </div>
+
+          <div class="visual-ai-signal-strip">
+            <div class="visual-ai-signal visual-ai-signal--risk">
+              <span>RECOVERY</span>
+              <strong>4/100</strong>
+              <small>Chest</small>
+            </div>
+            <div class="visual-ai-signal visual-ai-signal--risk">
+              <span>FATIGUE</span>
+              <strong>High</strong>
+              <small>Chest</small>
+            </div>
+            <div class="visual-ai-signal visual-ai-signal--paused">
+              <span>PROGRESSION</span>
+              <strong>Paused</strong>
+              <small>Chest</small>
+            </div>
+            <div class="visual-ai-signal visual-ai-signal--good">
+              <span>DATA</span>
+              <strong>Established</strong>
+              <small>11 training days</small>
+            </div>
+          </div>
+
+          <p class="visual-ai-caption">
+            Illustrative body-status example · colors summarize current muscle-level training context, not medical diagnosis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="recovery-explainer">
+      <div class="container recovery-explainer__grid">
+        <div>
+          <span class="eyebrow">Read the context</span>
+          <h2>Different signals.<br /><span>One training decision.</span></h2>
+        </div>
+
+        <div class="recovery-explainer__cards">
+          <article>
+            <span>01</span>
+            <strong>Recovery</strong>
+            <p>How prepared the selected area currently appears relative to recent training demand.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Fatigue</strong>
+            <p>Whether recent work suggests extra caution before asking for more stress.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Progression state</strong>
+            <p>Whether the current evidence supports moving forward, holding, or rebuilding first.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Data maturity</strong>
+            <p>How established the signal is from the amount of relevant training history available.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section">
+      <div class="container">
+        <div class="final-cta__inner">
+          <h2 class="final-cta__headline">Recovery Context Should<br />Change The Next Ask.</h2>
+          <p class="final-cta__sub">
+            RepForge keeps recovery connected to execution and progression instead of reducing the entire training state to one number.
+          </p>
+          <a href="performance.html" class="btn btn--primary btn--xl btn--forge">
+            <span class="btn__text">See Performance Intelligence</span><span class="btn__icon">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/scroll-reveal.js" defer></script>
+</body>
+</html>

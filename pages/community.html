@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore RepForge Community: public training profiles, workout posts, PRs, training photos, Kudos, notifications, reporting, blocking and sharing." />
+  <title>Community — RepForge AI</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+</head>
+<body>
+  <header class="nav-wrapper" id="nav">
+    <nav class="nav-inner container">
+      <a href="../index.html" class="nav-logo nav-logo--brand" aria-label="RepForge AI Home">
+        <img src="../assets/images/repforge-anvil-transparent.png" alt="" class="nav-logo__anvil" aria-hidden="true" />
+        <span class="logo-text">RepForge <span>AI</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="training-system.html" class="nav-link">Training System</a></li>
+        <li><a href="performance.html" class="nav-link">Performance</a></li>
+        <li><a href="recovery.html" class="nav-link">Recovery</a></li>
+        <li><a href="community.html" class="nav-link">Community</a></li>
+        <li><a href="features.html" class="nav-link">All Features</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="../index.html" class="btn btn--primary btn--sm">Back Home</a>
+      </div>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false" id="navBurger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-progress" id="navProgress" aria-hidden="true"></div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Navigation">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">✕</button>
+    <ul role="list">
+      <li><a href="training-system.html">Training System</a></li>
+      <li><a href="performance.html">Performance</a></li>
+      <li><a href="recovery.html">Recovery</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="features.html">All Features</a></li>
+    </ul>
+    <div class="mobile-nav__cta">
+      <a href="../index.html" class="btn btn--primary btn--full">Back Home</a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+    <section class="community-page-hero">
+      <div class="container">
+        <span class="eyebrow">RepForge Community</span>
+        <h1>Share the work.<br /><span>Keep training first.</span></h1>
+        <p>
+          RepForge Community gives lifters a place to share workouts, PRs and training moments without turning the product into a social-first distraction.
+        </p>
+
+        <div class="community-page-hero__signals" aria-label="Community features">
+          <span>Public profiles</span>
+          <span>Workout posts</span>
+          <span>PR posts</span>
+          <span>Photo posts</span>
+          <span>Kudos</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="community-social">
+      <div class="container">
+        <div class="community-social__intro">
+          <div>
+            <span class="eyebrow">Inside the feed</span>
+            <h2>Less empty scrolling.<br /><span>More training worth sharing.</span></h2>
+          </div>
+          <p>
+            Workouts, PRs and training moments sit together in a feed that still feels like RepForge — performance first, social second.
+          </p>
+        </div>
+
+        <div class="community-social__layout">
+          <article class="social-post social-post--hero" aria-label="Illustrative RepForge Community workout post">
+            <div class="social-post__author">
+              <div class="social-avatar social-avatar--alex">AM</div>
+              <div class="social-post__identity">
+                <div>
+                  <strong>Alex M.</strong>
+                  <span class="social-verified" aria-label="Public profile">PUBLIC</span>
+                </div>
+                <small>Upper Body · 42 min · Today</small>
+              </div>
+              <button type="button" class="social-post__more" aria-label="More post options">•••</button>
+            </div>
+
+            <div class="social-post__photo">
+              <img
+                src="https://images.unsplash.com/photo-1704223523492-6279abd5261b?fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+                alt="Athlete training with dumbbells in a gym"
+                loading="lazy"
+              />
+              <div class="social-post__photo-overlay">
+                <span>WORKOUT COMPLETE</span>
+                <strong>Upper Body</strong>
+                <small>4 exercises · 13 working sets</small>
+              </div>
+            </div>
+
+            <div class="social-post__body">
+              <p class="social-post__caption">
+                Solid session today. Kept the last Bench set controlled and finally moved the row without sacrificing reserve.
+              </p>
+
+              <div class="social-post__workout">
+                <div>
+                  <span>BENCH PRESS</span>
+                  <strong>100 kg × 10</strong>
+                  <small>@ RIR 2</small>
+                </div>
+                <div>
+                  <span>CHEST-SUPPORTED ROW</span>
+                  <strong>80 kg × 10</strong>
+                  <small>@ RIR 2</small>
+                </div>
+              </div>
+
+              <div class="social-post__pr">
+                <span class="social-post__pr-badge">PR</span>
+                <div>
+                  <strong>New training milestone</strong>
+                  <small>Bench Press · best confirmed working set</small>
+                </div>
+              </div>
+
+              <div class="social-post__engagement">
+                <div class="social-post__kudos-stack" aria-hidden="true">
+                  <span class="social-avatar social-avatar--john">JM</span>
+                  <span class="social-avatar social-avatar--mia">MK</span>
+                  <span class="social-avatar social-avatar--leo">LS</span>
+                </div>
+                <span><strong>18</strong> Kudos</span>
+                <span class="social-post__engagement-dot">·</span>
+                <span>3 shared reactions</span>
+              </div>
+
+              <div class="social-post__actions">
+                <button type="button"><span>＋</span> Give Kudos</button>
+                <button type="button"><span>↗</span> Share</button>
+              </div>
+            </div>
+
+            <div class="social-kudos">
+              <div class="social-avatar social-avatar--john">JM</div>
+              <div>
+                <p><strong>John M.</strong> gave Kudos</p>
+                <small>“That last set looked clean.” · 2m</small>
+              </div>
+              <span class="social-kudos__mark">KUDOS</span>
+            </div>
+          </article>
+
+          <div class="community-social__rail">
+            <article class="social-mini-card social-mini-card--profile">
+              <div class="social-mini-card__top">
+                <span>PUBLIC PROFILE</span>
+                <small>Active now</small>
+              </div>
+              <div class="social-profile-preview">
+                <div class="social-avatar social-avatar--sarah social-avatar--lg">SK</div>
+                <div>
+                  <strong>Sarah K.</strong>
+                  <small>Hypertrophy · Intermediate</small>
+                </div>
+              </div>
+              <div class="social-profile-preview__stats">
+                <div><strong>28</strong><span>Posts</span></div>
+                <div><strong>11</strong><span>PRs</span></div>
+                <div><strong>126</strong><span>Kudos</span></div>
+              </div>
+            </article>
+
+            <article class="social-mini-card social-mini-card--activity">
+              <div class="social-mini-card__top">
+                <span>RECENT ACTIVITY</span>
+                <small>Community</small>
+              </div>
+
+              <div class="social-activity-row">
+                <div class="social-avatar social-avatar--leo">LS</div>
+                <div>
+                  <p><strong>Leo S.</strong> shared a new PR</p>
+                  <small>Weighted Pull-Up · +35 kg × 5</small>
+                </div>
+                <span>PR</span>
+              </div>
+
+              <div class="social-activity-row">
+                <div class="social-avatar social-avatar--mia">MK</div>
+                <div>
+                  <p><strong>Mia K.</strong> posted a training photo</p>
+                  <small>Legs · 56 min</small>
+                </div>
+                <span>PHOTO</span>
+              </div>
+
+              <div class="social-activity-row">
+                <div class="social-avatar social-avatar--john">JM</div>
+                <div>
+                  <p><strong>John M.</strong> gave Alex Kudos</p>
+                  <small>Bench Press milestone</small>
+                </div>
+                <span>＋1</span>
+              </div>
+            </article>
+
+            <article class="social-mini-card social-mini-card--controls">
+              <div class="social-mini-card__top">
+                <span>YOUR SPACE</span>
+                <small>Controls</small>
+              </div>
+              <p>
+                Public sharing comes with notifications, reporting and block controls when you need them.
+              </p>
+              <div class="social-control-pills">
+                <span>Notifications</span>
+                <span>Report</span>
+                <span>Block</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="community-social__note">
+          Illustrative Community preview · names, activity and metrics shown here are fictional examples.
+        </p>
+      </div>
+    </section>
+
+    <section class="community-controls">
+      <div class="container community-controls__grid">
+        <div>
+          <span class="eyebrow">Community controls</span>
+          <h2>Participation with<br /><span>real boundaries.</span></h2>
+          <p>
+            RepForge includes the practical controls a public training space needs: activity notifications, reporting and blocking.
+          </p>
+        </div>
+
+        <div class="community-controls__cards">
+          <article>
+            <span>01</span>
+            <strong>Notifications</strong>
+            <p>Community activity can surface through real-time notification flows.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Report</strong>
+            <p>Users can report Community content through the moderation foundation.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Block</strong>
+            <p>Block and unblock controls help users manage unwanted interactions.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Share</strong>
+            <p>Training posts can use native device sharing outside RepForge.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section">
+      <div class="container">
+        <div class="final-cta__inner">
+          <h2 class="final-cta__headline">Built Around Training.<br />Not Attention.</h2>
+          <p class="final-cta__sub">
+            Community adds identity and shared progress around the training system without replacing the training system itself.
+          </p>
+          <a href="../index.html" class="btn btn--primary btn--xl btn--forge">
+            <span class="btn__text">Back To RepForge</span><span class="btn__icon">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/scroll-reveal.js" defer></script>
+</body>
+</html>

@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="RepForge AI connects training plans, workout execution, progression, recovery, analytics and community into one intelligent training system." />
   <title>RepForge AI — Know What to Do Next</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/components.css" />
@@ -29,9 +26,9 @@
         </a>
       <ul class="nav-links" role="list">
         <li><a href="pages/training-system.html" class="nav-link">Training System</a></li>
-        <li><a href="#features" class="nav-link">Features</a></li>
-        <li><a href="#recovery" class="nav-link">Recovery</a></li>
-        <li><a href="#community" class="nav-link">Community</a></li>
+        <li><a href="pages/performance.html" class="nav-link">Performance</a></li>
+        <li><a href="pages/recovery.html" class="nav-link">Recovery</a></li>
+        <li><a href="pages/community.html" class="nav-link">Community</a></li>
         <li><a href="pages/features.html" class="nav-link">All Features</a></li>
       </ul>
       <div class="nav-actions">
@@ -48,9 +45,9 @@
     <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">✕</button>
     <ul role="list">
       <li><a href="pages/training-system.html">Training System</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#recovery">Recovery</a></li>
-      <li><a href="#community">Community</a></li>
+      <li><a href="pages/performance.html">Performance</a></li>
+      <li><a href="pages/recovery.html">Recovery</a></li>
+      <li><a href="pages/community.html">Community</a></li>
       <li><a href="pages/features.html">All Features</a></li>
     </ul>
     <div class="mobile-nav__cta">
@@ -263,7 +260,7 @@
 
           <div class="training-flow-card__foot training-flow-card__foot--link">
             <span>History, effort and recovery context stay attached to the next decision.</span>
-            <a href="pages/features.html#progress">Explore progression →</a>
+            <a href="pages/performance.html#progression">Explore progression →</a>
           </div>
         </article>
       </div>
@@ -305,7 +302,7 @@
             </div>
           </div>
 
-          <a href="pages/features.html#visual-ai" class="btn btn--outline btn--md">
+          <a href="pages/recovery.html#visual-ai" class="btn btn--outline btn--md">
             Explore Recovery Intelligence
           </a>
         </div>
@@ -380,7 +377,7 @@
             <div class="mock-chart" aria-hidden="true"><svg viewBox="0 0 260 100" fill="none" width="100%" height="100"><defs><linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--forge)" stop-opacity="0.3"/><stop offset="100%" stop-color="var(--forge)" stop-opacity="0"/></linearGradient></defs><path d="M0 88 L38 82 L76 75 L114 68 L152 54 L198 47 L260 29" stroke="var(--forge)" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M0 88 L38 82 L76 75 L114 68 L152 54 L198 47 L260 29 L260 100 L0 100Z" fill="url(#chartGrad)"/><circle cx="260" cy="29" r="4" fill="var(--forge)"/></svg></div>
             <div class="mock-stats-row"><div class="mock-stat"><span class="mock-stat-val">+ REPS</span><span class="mock-stat-key">when earned</span></div><div class="mock-stat"><span class="mock-stat-val">+ LOAD</span><span class="mock-stat-key">when confirmed</span></div><div class="mock-stat"><span class="mock-stat-val">HOLD</span><span class="mock-stat-key">when needed</span></div></div>
           </div></div>
-          <div class="showcase-card__copy"><span class="eyebrow">Progression Intelligence</span><h3>Your completed session becomes evidence for what happens next</h3><p>Progression, performance trends, next-target guidance, predictions, Personal Records, Session Review, Monthly Review and workout analytics turn completed sessions into a longer training story.</p><a href="pages/features.html#progress" class="link-arrow">Explore progression & analytics →</a></div>
+          <div class="showcase-card__copy"><span class="eyebrow">Progression Intelligence</span><h3>Your completed session becomes evidence for what happens next</h3><p>Progression, performance trends, next-target guidance, predictions, Personal Records, Session Review, Monthly Review and workout analytics turn completed sessions into a longer training story.</p><a href="pages/performance.html#progression" class="link-arrow">Explore progression & analytics →</a></div>
         </article>
 
       </div></div>
@@ -416,13 +413,54 @@
       </div>
     </section>
 
-    <section class="pricing-teaser section" id="community">
-      <div class="container">
-        <div class="section-header"><span class="eyebrow">More Around Your Training</span><h2 class="section-title">Track the Wider Context.<br />Share the Moments That Matter.</h2></div>
-        <div class="pricing-cards">
-          <article class="pricing-card"><div class="pricing-card__tier">Nutrition</div><h3>Track it without pretending it knows more than it does.</h3><p class="pricing-card__desc">Keep nutrition alongside your training while preserving a clear boundary between logging food and making training decisions.</p><ul class="pricing-card__features" role="list"><li>Calories and macros</li><li>Hydration</li><li>Bodyweight</li><li>Nutrition targets</li><li>Nutrition trends</li></ul></article>
-          <article class="pricing-card pricing-card--featured"><div class="pricing-card__badge">Community</div><div class="pricing-card__tier">Train Together</div><h3>Share workouts, PRs and training moments.</h3><p class="pricing-card__desc">RepForge Community adds a social layer around the training system without turning the product into a generic social feed.</p><ul class="pricing-card__features" role="list"><li>Workout and PR sharing</li><li>Community photo posts</li><li>Public profiles and avatars</li><li>Kudos and in-app activity</li><li>Report and block safety controls</li></ul></article>
-          <article class="pricing-card"><div class="pricing-card__tier">Your Account</div><h3>Training data with direct account controls.</h3><p class="pricing-card__desc">Sign in with Google, sync workout history and keep clear controls for local data and account deletion.</p><ul class="pricing-card__features" role="list"><li>Google Sign-In</li><li>Cloud workout sync</li><li>Local data reset</li><li>In-app account deletion</li><li>Public account-deletion support</li></ul></article>
+    <section class="community-home" id="community">
+      <div class="container community-home__grid">
+        <div class="community-home__copy">
+          <span class="eyebrow">Community</span>
+          <h2 class="community-home__title">Training is personal.<br /><span>Progress can still be shared.</span></h2>
+          <p class="community-home__lead">
+            Share workouts, PRs and training moments with other lifters while keeping RepForge focused on training first — not endless social noise.
+          </p>
+
+          <div class="community-home__chips" aria-label="Community capabilities">
+            <span>Workout posts</span>
+            <span>PR posts</span>
+            <span>Photo posts</span>
+            <span>Kudos</span>
+          </div>
+
+          <a href="pages/community.html" class="btn btn--outline btn--md">
+            Explore Community
+          </a>
+        </div>
+
+        <div class="community-home__preview" aria-label="Illustrative RepForge Community preview">
+          <div class="community-home__profile">
+            <div class="community-home__avatar">RF</div>
+            <div>
+              <strong>Training profile</strong>
+              <span>Public profile · recent activity</span>
+            </div>
+          </div>
+
+          <div class="community-home__post">
+            <div class="community-home__post-head">
+              <span>WORKOUT</span>
+              <small>Today</small>
+            </div>
+            <strong>Push session completed</strong>
+            <p>Bench Press · Shoulder Press · Chest Press · Triceps</p>
+            <div class="community-home__post-meta">
+              <span>PR shared</span>
+              <span>Kudos</span>
+              <span>Share</span>
+            </div>
+          </div>
+
+          <div class="community-home__safety">
+            <span>COMMUNITY CONTROLS</span>
+            <p>Notifications, reporting and block controls are built into the Community foundation.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -441,7 +479,7 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand"><a href="index.html" class="nav-logo" aria-label="RepForge AI Home"><span class="logo-icon">⬡</span><span class="logo-text">RepForge <em>AI</em></span></a><p class="footer__tagline">Planning, execution, progression and recovery — connected.</p></div>
-        <nav class="footer__col" aria-label="Product links"><h3 class="footer__col-title">Product</h3><ul role="list"><li><a href="pages/features.html">Features</a></li><li><a href="pages/training-system.html">Training System</a></li><li><a href="#recovery">Visual AI & Recovery</a></li><li><a href="#community">Community</a></li></ul></nav>
+        <nav class="footer__col" aria-label="Product links"><h3 class="footer__col-title">Product</h3><ul role="list"><li><a href="pages/features.html">Features</a></li><li><a href="pages/training-system.html">Training System</a></li><li><a href="#recovery">Visual AI & Recovery</a></li><li><a href="pages/community.html">Community</a></li></ul></nav>
         <nav class="footer__col" aria-label="Support links"><h3 class="footer__col-title">Support</h3><ul role="list"><li><a href="mailto:repforgeaisupport@gmail.com">Contact Support</a></li><li><a href="https://borko1803.github.io/repforge-public/delete-account.html">Delete Account</a></li></ul></nav>
         <nav class="footer__col" aria-label="Legal links"><h3 class="footer__col-title">Legal</h3><ul role="list"><li><a href="pages/privacy.html">Privacy Policy</a></li><li><a href="pages/terms.html">Terms of Service</a></li><li><a href="https://borko1803.github.io/repforge-public/delete-account.html">Account Deletion</a></li></ul></nav>
       </div>
