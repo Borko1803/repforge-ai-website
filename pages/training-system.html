@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore RepForge AI planning: generated training weeks, profile-aware programming, Plan Fit, recovery spacing and weekly structure." />
+  <title>Training System — RepForge AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+</head>
+<body>
+  <header class="nav-wrapper" id="nav">
+    <nav class="nav-inner container">
+      <a href="../index.html" class="nav-logo nav-logo--brand" aria-label="RepForge AI Home">
+        <img src="../assets/images/repforge-anvil-transparent.png" alt="" class="nav-logo__anvil" aria-hidden="true" />
+        <span class="logo-text">RepForge <span>AI</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="training-system.html" class="nav-link">Training System</a></li>
+        <li><a href="../index.html#features" class="nav-link">Features</a></li>
+        <li><a href="../index.html#recovery" class="nav-link">Recovery</a></li>
+        <li><a href="../index.html#community" class="nav-link">Community</a></li>
+        <li><a href="features.html" class="nav-link">All Features</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="../index.html" class="btn btn--primary btn--sm">Back Home</a>
+      </div>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false" id="navBurger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-progress" id="navProgress" aria-hidden="true"></div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Navigation">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">✕</button>
+    <ul role="list">
+      <li><a href="training-system.html">Training System</a></li>
+      <li><a href="../index.html#features">Features</a></li>
+      <li><a href="../index.html#recovery">Recovery</a></li>
+      <li><a href="../index.html#community">Community</a></li>
+      <li><a href="features.html">All Features</a></li>
+    </ul>
+    <div class="mobile-nav__cta">
+      <a href="../index.html" class="btn btn--primary btn--full">Back Home</a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+    <section class="training-page-hero">
+      <div class="container">
+        <span class="eyebrow">Training System</span>
+        <h1>Planning that understands<br /><span>the whole training week.</span></h1>
+        <p>
+          A deeper look at how RepForge builds a week from your setup, checks the result, and keeps planning connected to the rest of the training system.
+        </p>
+      </div>
+    </section>
+
+    <section class="program-section" id="ai-week-generator">
+      <div class="container program-section__header">
+        <div class="program-section__intro">
+          <span class="eyebrow">AI Week Generator</span>
+          <h2 class="program-section__title">A complete training week.<br /><span>Built around the whole setup.</span></h2>
+          <p class="program-section__lead">
+            RepForge does more than pick a split. It builds the week from your profile, prescribes exercises with sets, reps and RIR, places recovery days, checks the seven-day structure and explains why the result fits.
+          </p>
+        </div>
+      </div>
+
+      <div class="container program-showcase">
+        <aside class="program-profile-card" aria-label="Illustrative AI profile">
+          <div class="program-panel__topline">
+            <div>
+              <span class="program-panel__eyebrow">BUILD FROM AI PROFILE</span>
+              <strong>Training context</strong>
+            </div>
+            <span class="program-panel__state">ACTIVE</span>
+          </div>
+
+          <div class="program-profile-grid">
+            <div class="program-profile-chip"><span>Goal</span><strong>Hypertrophy</strong></div>
+            <div class="program-profile-chip"><span>Training days</span><strong>4 days</strong></div>
+            <div class="program-profile-chip"><span>Equipment</span><strong>Full gym</strong></div>
+            <div class="program-profile-chip"><span>Protection</span><strong>No limits</strong></div>
+            <div class="program-profile-chip"><span>Volume target</span><strong>High</strong></div>
+            <div class="program-profile-chip"><span>Recovery spacing</span><strong>Excellent</strong></div>
+            <div class="program-profile-chip program-profile-chip--wide"><span>Current context</span><strong>Maintenance</strong></div>
+          </div>
+
+          <div class="program-metrics">
+            <div><strong>4</strong><span>Workouts</span></div>
+            <div><strong>3</strong><span>Rest</span></div>
+            <div><strong>52</strong><span>Sets</span></div>
+          </div>
+
+          <div class="program-balance">
+            <div>
+              <span>Volume</span>
+              <strong>High</strong>
+            </div>
+            <div>
+              <span>Recovery balance</span>
+              <strong>Excellent</strong>
+            </div>
+          </div>
+        </aside>
+
+        <div class="program-week-card" aria-label="Illustrative generated week">
+          <div class="program-panel__topline">
+            <div>
+              <span class="program-panel__eyebrow">AI GENERATED WEEK</span>
+              <strong>Push Pull Legs</strong>
+            </div>
+            <span class="program-fit program-fit--strong">STRONG FIT</span>
+          </div>
+
+          <div class="program-week-list">
+            <article class="program-day-card">
+              <div class="program-day-card__head">
+                <div><span>MONDAY</span><strong>Push</strong></div>
+                <span class="program-day-card__type">TRAIN</span>
+              </div>
+              <p class="program-day-card__meta">4 exercises · 13 sets · 43 min</p>
+              <ul>
+                <li><strong>Bench Press</strong><span>4 sets · 6–10 reps · RIR 1–3</span></li>
+                <li><strong>Machine Shoulder Press</strong><span>3 sets · 8–12 reps · RIR 1–3</span></li>
+                <li><strong>Machine Lateral Raise</strong><span>3 sets · 10–20 reps · RIR 1–3</span></li>
+                <li><strong>Machine Triceps Extension</strong><span>3 sets · 10–20 reps · RIR 1–3</span></li>
+              </ul>
+            </article>
+
+            <article class="program-day-card">
+              <div class="program-day-card__head">
+                <div><span>TUESDAY</span><strong>Pull</strong></div>
+                <span class="program-day-card__type">TRAIN</span>
+              </div>
+              <p class="program-day-card__meta">4 exercises · 13 sets · 43 min</p>
+              <ul>
+                <li><strong>Weighted Pull-Up</strong><span>4 sets · 6–10 reps · RIR 1–3</span></li>
+                <li><strong>Machine High Row</strong><span>3 sets · 8–12 reps · RIR 1–3</span></li>
+                <li><strong>Reverse Pec Deck</strong><span>3 sets · 10–20 reps · RIR 1–3</span></li>
+                <li><strong>Machine Biceps Curl</strong><span>3 sets · 10–20 reps · RIR 1–3</span></li>
+              </ul>
+            </article>
+
+            <article class="program-day-card program-day-card--rest">
+              <div class="program-day-card__head">
+                <div><span>WEDNESDAY</span><strong>Rest Day</strong></div>
+                <span class="program-day-card__type program-day-card__type--rest">REST</span>
+              </div>
+              <p>Recovery day. No workout scheduled.</p>
+            </article>
+
+            <article class="program-day-card">
+              <div class="program-day-card__head">
+                <div><span>THURSDAY</span><strong>Legs</strong></div>
+                <span class="program-day-card__type">TRAIN</span>
+              </div>
+              <p class="program-day-card__meta">4 exercises · 13 sets · 43 min</p>
+              <ul>
+                <li><strong>Smith Machine Squat</strong><span>4 sets · 6–10 reps · RIR 1–3</span></li>
+                <li><strong>Machine Hip Thrust / Glute Drive</strong><span>3 sets · 8–12 reps · RIR 1–3</span></li>
+                <li><strong>Lying Leg Curl</strong><span>3 sets · 10–20 reps · RIR 1–3</span></li>
+                <li><strong>Seated Calf Raise</strong><span>3 sets · 10–20 reps · RIR 1–3</span></li>
+              </ul>
+            </article>
+
+            <article class="program-day-card">
+              <div class="program-day-card__head">
+                <div><span>FRIDAY</span><strong>Push 2</strong></div>
+                <span class="program-day-card__type">TRAIN</span>
+              </div>
+              <p class="program-day-card__meta">4 exercises · 13 sets · 43 min</p>
+              <ul>
+                <li><strong>Smith Machine Shoulder Press</strong><span>4 sets · 6–10 reps · RIR 1–3</span></li>
+                <li><strong>Machine Chest Press</strong><span>3 sets · 8–12 reps · RIR 1–3</span></li>
+                <li><strong>Cable Lateral Raise</strong><span>3 sets · 10–20 reps · RIR 1–3</span></li>
+                <li><strong>Single-Arm Cable Pushdown</strong><span>3 sets · 10–20 reps · RIR 1–3</span></li>
+              </ul>
+            </article>
+
+            <div class="program-rest-strip">
+              <span>SATURDAY · REST</span>
+              <span>SUNDAY · REST</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="program-reasoning-card" aria-label="Illustrative AI reasoning">
+          <div class="program-panel__topline program-panel__topline--reasoning">
+            <div>
+              <span class="program-panel__eyebrow">AI REASONING</span>
+              <strong>Push Pull Legs</strong>
+            </div>
+            <div class="program-fit-score">
+              <span>PLAN FIT</span>
+              <strong>98%</strong>
+              <small>STRONG FIT</small>
+            </div>
+          </div>
+
+          <div class="program-reasoning-body">
+            <span class="program-reasoning-label">WHY THIS PLAN</span>
+            <ul class="program-reasoning-list">
+              <li>Every workout covers the training role it needs to fill.</li>
+              <li>The available exercise pool strongly supports the requested split.</li>
+              <li>Exercise variety, movement balance, protected areas and weekly muscle volume are well controlled.</li>
+              <li>Weekly muscle volume is already within a sensible range.</li>
+              <li>The workouts fit the seven-day schedule with enough recovery between training days.</li>
+            </ul>
+          </div>
+
+          <div class="program-reasoning-footer">
+            <div><span>Structure</span><strong>Complete</strong></div>
+            <div><span>Exercise fit</span><strong>Strong</strong></div>
+            <div><span>Recovery</span><strong>Excellent</strong></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="container program-section__footer-copy">
+        <p>
+          Want a different valid version? Generate a <strong>New Variation</strong> without rebuilding your profile and setup.
+        </p>
+      </div>
+    </section>
+
+    <section class="final-cta section">
+      <div class="container">
+        <div class="final-cta__inner">
+          <h2 class="final-cta__headline">The Plan Is Only<br />The Beginning.</h2>
+          <p class="final-cta__sub">See how execution, progression and recovery continue the story after the week is generated.</p>
+          <a href="../index.html#live-coach" class="btn btn--primary btn--xl btn--forge">
+            <span class="btn__text">See the Full Training Flow</span><span class="btn__icon">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/scroll-reveal.js" defer></script>
+</body>
+</html>
