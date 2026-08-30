@@ -1,0 +1,136 @@
+/* ================================================================
+   DESIGN TOKENS — RepForge AI
+   Premium sports-tech identity
+   Single source of truth for all visual decisions
+================================================================ */
+
+:root {
+
+  /* ---- Core Brand Palette ---- */
+  --ink-black:     #070A0C;      /* deepest page background */
+  --steel-navy:    #0E1418;      /* primary card / raised surface */
+  --dark-steel:    #1A242A;      /* borders, dividers, secondary surfaces */
+  --mid-steel:     #6F7D84;      /* muted text / inactive controls */
+  --cold-white:    #C9D2D6;      /* body copy */
+  --pure-white:    #F4F7F8;      /* headings / high emphasis */
+
+  /*
+   * Keep the legacy --forge token name for compatibility with the
+   * existing website CSS, but RepForge's actual brand accent is now
+   * the electric green used by the app intro identity.
+   */
+  --forge:         #4FAF79;      /* controlled RepForge emerald */
+  --forge-dim:     #438F68;      /* hover / pressed green */
+  --forge-glow:    rgba(79, 175, 121, 0.12);
+  --forge-glow-sm: rgba(79, 175, 121, 0.055);
+
+  /* Supporting semantic colors — intentionally restrained */
+  --green-gain:    #6BC692;      /* positive / improvement */
+  --amber-warn:    #D6A85F;      /* caution / warning */
+
+  /* ---- Semantic Surface Layers ---- */
+  --surface-0: var(--ink-black);
+  --surface-1: var(--steel-navy);
+  --surface-2: var(--dark-steel);
+  --surface-3: #243037;
+
+  /* ---- Typography ---- */
+  /*
+   * Inter is already loaded by the current website. Using it for both
+   * display and body typography removes the bodybuilding-poster feel
+   * while keeping the first identity pass dependency-free.
+   */
+  --font-display: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body:    'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  /* ---- Type Scale ---- */
+  --text-xs:   0.75rem;     /* 12px — captions, eyebrows */
+  --text-sm:   0.875rem;    /* 14px — small labels */
+  --text-base: 1rem;        /* 16px — body */
+  --text-lg:   1.125rem;    /* 18px — lead text */
+  --text-xl:   1.25rem;     /* 20px */
+  --text-2xl:  1.5rem;      /* 24px — card headings */
+  --text-3xl:  2rem;        /* 32px — section titles */
+  --text-4xl:  2.625rem;    /* 42px */
+  --text-5xl:  3.5rem;      /* 56px — hero */
+  --text-6xl:  4.5rem;      /* 72px — hero XL */
+  --text-display: clamp(3.25rem, 8vw, 6.75rem);
+
+  /* ---- Spacing Scale (8px base) ---- */
+  --space-1:   0.25rem;    /* 4px */
+  --space-2:   0.5rem;     /* 8px */
+  --space-3:   0.75rem;    /* 12px */
+  --space-4:   1rem;       /* 16px */
+  --space-5:   1.25rem;    /* 20px */
+  --space-6:   1.5rem;     /* 24px */
+  --space-8:   2rem;       /* 32px */
+  --space-10:  2.5rem;     /* 40px */
+  --space-12:  3rem;       /* 48px */
+  --space-16:  4rem;       /* 64px */
+  --space-20:  5rem;       /* 80px */
+  --space-24:  6rem;       /* 96px */
+  --space-32:  8rem;       /* 128px */
+
+  /* ---- Border Radius ---- */
+  --radius-sm:   5px;
+  --radius-md:   9px;
+  --radius-lg:   14px;
+  --radius-xl:   20px;
+  --radius-2xl:  28px;
+  --radius-pill: 9999px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.34);
+  --shadow-md:   0 8px 24px rgba(0, 0, 0, 0.32);
+  --shadow-lg:   0 16px 44px rgba(0, 0, 0, 0.38);
+  --shadow-xl:   0 28px 80px rgba(0, 0, 0, 0.48);
+
+  /* Brand glow stays controlled — signal, not gaming neon */
+  --shadow-forge:
+    0 0 20px var(--forge-glow),
+    0 0 52px var(--forge-glow-sm);
+  --shadow-forge-btn:
+    0 8px 28px rgba(79, 175, 121, 0.10),
+    0 0 0 1px rgba(79, 175, 121, 0.08);
+
+  /* ---- Borders ---- */
+  --border-color: rgba(173, 193, 201, 0.14);
+  --border: 1px solid var(--border-color);
+  --border-forge: 1px solid rgba(79, 175, 121, 0.40);
+
+  /* ---- Transitions ---- */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in:    cubic-bezier(0.64, 0, 0.78, 0);
+  --ease-inout: cubic-bezier(0.76, 0, 0.24, 1);
+  --t-fast:   150ms;
+  --t-base:   250ms;
+  --t-slow:   400ms;
+  --t-xslow:  700ms;
+
+  /* ---- Layout ---- */
+  --container-max: 1240px;
+  --container-pad: var(--space-6);
+  --nav-height:    72px;
+
+  /* ---- Z-Index ---- */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-overlay: 100;
+  --z-drawer:  200;
+  --z-nav:     300;
+  --z-toast:   400;
+}
+
+/* ---- Responsive container padding ---- */
+@media (min-width: 768px) {
+  :root {
+    --container-pad: var(--space-8);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-pad: var(--space-12);
+  }
+}

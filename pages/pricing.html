@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RepForge AI pricing — Starter free, Forge $19/month, Elite $49/month. 14-day free trial." />
+  <title>Pricing — RepForge AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/pages/pricing.css" />
+</head>
+<body>
+
+  <!-- Nav (same as index) -->
+  <header class="nav-wrapper" id="nav">
+    <nav class="nav-inner container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">RepForge <em>AI</em></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="../index.html#features" class="nav-link">Features</a></li>
+        <li><a href="science.html" class="nav-link">The Science</a></li>
+        <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+        <li><a href="athletes.html" class="nav-link">Athletes</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn--ghost btn--sm">Log in</a>
+        <a href="signup.html" class="btn btn--primary btn--sm">Start Free</a>
+      </div>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false" id="navBurger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-progress" id="navProgress" aria-hidden="true"></div>
+  </header>
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true">
+    <button class="mobile-nav__close" id="mobileNavClose">✕</button>
+    <ul role="list">
+      <li><a href="../index.html#how-it-works">How It Works</a></li>
+      <li><a href="../index.html#features">Features</a></li>
+      <li><a href="science.html">The Science</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="athletes.html">Athletes</a></li>
+    </ul>
+    <div class="mobile-nav__cta">
+      <a href="login.html" class="btn btn--ghost btn--full">Log in</a>
+      <a href="signup.html" class="btn btn--primary btn--full">Start Free</a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="page-hero section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Pricing</span>
+          <h1 class="section-title">One Monthly Investment.<br>Unlimited Gainz.</h1>
+          <p class="section-sub">Cancel anytime. No contracts. No hidden upsells. Just programs that work.</p>
+          <!-- Billing toggle -->
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <button class="toggle-btn toggle-btn--active" id="monthlyBtn" aria-pressed="true">Monthly</button>
+            <button class="toggle-btn" id="annualBtn" aria-pressed="false">
+              Annual <span class="toggle-save">Save 25%</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Pricing cards (full detail) -->
+        <div class="pricing-cards pricing-cards--full">
+
+          <article class="pricing-card">
+            <div class="pricing-card__tier">Starter</div>
+            <div class="pricing-card__price">
+              <span class="price-free">Free</span>
+              <span class="price-period">forever</span>
+            </div>
+            <p class="pricing-card__desc">The perfect starting point. No credit card, no time limit.</p>
+            <ul class="pricing-card__features" role="list">
+              <li>1 active AI-generated program</li>
+              <li>Exercise library (500+ movements)</li>
+              <li>Basic session logging</li>
+              <li>Community forums access</li>
+              <li>Bodyweight & dumbbell programs</li>
+              <li class="feature--no">Adaptive periodization</li>
+              <li class="feature--no">AI Coach chat</li>
+              <li class="feature--no">Analytics dashboard</li>
+              <li class="feature--no">Wearable sync</li>
+            </ul>
+            <a href="signup.html" class="btn btn--outline btn--full">Get Started Free</a>
+            <p class="card-note">No credit card required</p>
+          </article>
+
+          <article class="pricing-card pricing-card--featured">
+            <div class="pricing-card__badge">Most Popular</div>
+            <div class="pricing-card__tier">Forge</div>
+            <div class="pricing-card__price">
+              <span class="price-amount" id="forgePriceMonthly" data-monthly="19" data-annual="14">$19</span>
+              <span class="price-period">/ month</span>
+            </div>
+            <p class="pricing-card__desc">For serious lifters who want their program to evolve with them.</p>
+            <ul class="pricing-card__features" role="list">
+              <li>Unlimited AI programs</li>
+              <li>Adaptive periodization engine</li>
+              <li>AI Coach chat (unlimited messages)</li>
+              <li>Full analytics dashboard</li>
+              <li>Strength delta & 1RM projections</li>
+              <li>Volume landmark calculations (MEV/MAV/MRV)</li>
+              <li>Wearable sync (Garmin, Apple Watch)</li>
+              <li>Exercise substitution AI</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="signup.html?plan=forge" class="btn btn--primary btn--full btn--forge">Start Forge — 14 Days Free</a>
+            <p class="card-note">Then $19/month. Cancel anytime.</p>
+          </article>
+
+          <article class="pricing-card">
+            <div class="pricing-card__tier">Elite</div>
+            <div class="pricing-card__price">
+              <span class="price-amount" id="elitePriceMonthly" data-monthly="49" data-annual="37">$49</span>
+              <span class="price-period">/ month</span>
+            </div>
+            <p class="pricing-card__desc">For competitors, coaches, and athletes who need every edge.</p>
+            <ul class="pricing-card__features" role="list">
+              <li>Everything in Forge</li>
+              <li>Monthly human coach program review</li>
+              <li>Blood biomarker integration</li>
+              <li>DEXA scan calibration input</li>
+              <li>Team & athlete dashboard access</li>
+              <li>Video form analysis (AI)</li>
+              <li>Competition peak scheduling</li>
+              <li>White-label client reports (for coaches)</li>
+              <li>Dedicated success manager</li>
+            </ul>
+            <a href="signup.html?plan=elite" class="btn btn--outline btn--full">Start Elite — 14 Days Free</a>
+            <p class="card-note">Then $49/month. Cancel anytime.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison table -->
+    <section class="comparison section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Full Feature Comparison</h2>
+        </div>
+        <div class="comparison-table-wrap">
+          <table class="comparison-table" role="table">
+            <thead>
+              <tr>
+                <th scope="col" class="feature-col">Feature</th>
+                <th scope="col">Starter</th>
+                <th scope="col" class="col--featured">Forge</th>
+                <th scope="col">Elite</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-group-header"><td colspan="4">Programs</td></tr>
+              <tr>
+                <td>AI program generations</td>
+                <td>1</td>
+                <td class="col--featured">Unlimited</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td>Adaptive periodization</td>
+                <td class="cell--no">✗</td>
+                <td class="col--featured cell--yes">✓</td>
+                <td class="cell--yes">✓</td>
+              </tr>
+              <tr>
+                <td>Auto deload detection</td>
+                <td class="cell--no">✗</td>
+                <td class="col--featured cell--yes">✓</td>
+                <td class="cell--yes">✓</td>
+              </tr>
+              <tr>
+                <td>Exercise substitution AI</td>
+                <td class="cell--no">✗</td>
+                <td class="col--featured cell--yes">✓</td>
+                <td class="cell--yes">✓</td>
+              </tr>
+              <tr class="table-group-header"><td colspan="4">Coaching & Analytics</td></tr>
+              <tr>
+                <td>AI Coach chat</td>
+                <td class="cell--no">✗</td>
+                <td class="col--featured cell--yes">✓ Unlimited</td>
+                <td class="cell--yes">✓ Unlimited</td>
+              </tr>
+              <tr>
+                <td>Human coach review</td>
+                <td class="cell--no">✗</td>
+                <td class="col--featured cell--no">✗</td>
+                <td class="cell--yes">✓ Monthly</td>
+              </tr>
+              <tr>
+                <td>Analytics dashboard</td>
+                <td>Basic</td>
+                <td class="col--featured">Full suite</td>
+                <td>Full suite</td>
+              </tr>
+              <tr>
+                <td>1RM projection engine</td>
+                <td class="cell--no">✗</td>
+                <td class="col--featured cell--yes">✓</td>
+                <td class="cell--yes">✓</td>
+              </tr>
+              <tr class="table-group-header"><td colspan="4">Integrations</td></tr>
+              <tr>
+                <td>Garmin / Apple Watch sync</td>
+                <td class="cell--no">✗</td>
+                <td class="col--featured cell--yes">✓</td>
+                <td class="cell--yes">✓</td>
+              </tr>
+              <tr>
+                <td>Blood biomarker integration</td>
+                <td class="cell--no">✗</td>
+                <td class="col--featured cell--no">✗</td>
+                <td class="cell--yes">✓</td>
+              </tr>
+              <tr>
+                <td>DEXA scan calibration</td>
+                <td class="cell--no">✗</td>
+                <td class="col--featured cell--no">✗</td>
+                <td class="cell--yes">✓</td>
+              </tr>
+              <tr class="table-group-header"><td colspan="4">Support</td></tr>
+              <tr>
+                <td>Community access</td>
+                <td class="cell--yes">✓</td>
+                <td class="col--featured cell--yes">✓</td>
+                <td class="cell--yes">✓</td>
+              </tr>
+              <tr>
+                <td>Priority support</td>
+                <td class="cell--no">✗</td>
+                <td class="col--featured cell--yes">✓</td>
+                <td class="cell--yes">✓</td>
+              </tr>
+              <tr>
+                <td>Dedicated success manager</td>
+                <td class="cell--no">✗</td>
+                <td class="col--featured cell--no">✗</td>
+                <td class="cell--yes">✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Common Questions</h2>
+        </div>
+        <div class="faq-list" id="faqList">
+          <details class="faq-item">
+            <summary class="faq-q">What happens after my 14-day trial?</summary>
+            <div class="faq-a"><p>You'll be charged the plan rate you selected at signup. If you don't want to continue, cancel before day 14 and you won't be charged anything. No dark patterns, no confusing flows.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Can I switch plans at any time?</summary>
+            <div class="faq-a"><p>Yes — upgrade or downgrade instantly. If you upgrade, you're prorated. If you downgrade, credits roll to your next billing cycle.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Is my data safe?</summary>
+            <div class="faq-a"><p>Your training data is encrypted at rest and in transit. We never sell personal data. You can export or delete everything at any time from your account settings.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Does RepForge AI work for beginners?</summary>
+            <div class="faq-a"><p>Absolutely. The AI assessment detects your training age and programs accordingly. Beginners get simpler, high-frequency programs that build foundational strength before complexity is layered in.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">What if I only have home gym equipment?</summary>
+            <div class="faq-a"><p>The program generator supports bodyweight only, dumbbells only, home gym, commercial gym, and custom equipment setups. The AI selects exercises based on what you actually have.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Is there a team or coach plan?</summary>
+            <div class="faq-a"><p>The Elite plan includes coach dashboard access for managing up to 10 athletes. For larger teams or gyms, <a href="mailto:team@repforge.ai">contact us</a> for custom pricing.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta section">
+      <div class="container">
+        <div class="final-cta__inner">
+          <h2 class="final-cta__headline">Start Forging Today.</h2>
+          <p class="final-cta__sub">14 days free. No credit card. Cancel anytime.</p>
+          <a href="signup.html" class="btn btn--primary btn--xl btn--forge">
+            <span class="btn__text">Start Your Free Trial</span>
+            <span class="btn__icon" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:none; padding-top:0">
+        <p class="footer__copy">© 2025 RepForge AI Inc. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/scroll-reveal.js" defer></script>
+  <script>
+    // Billing toggle
+    const monthlyBtn = document.getElementById('monthlyBtn');
+    const annualBtn  = document.getElementById('annualBtn');
+    const priceEls   = document.querySelectorAll('[data-monthly]');
+
+    function setMode(mode) {
+      priceEls.forEach(el => {
+        el.textContent = '$' + el.dataset[mode];
+      });
+      monthlyBtn.classList.toggle('toggle-btn--active', mode === 'monthly');
+      annualBtn.classList.toggle('toggle-btn--active', mode === 'annual');
+      monthlyBtn.setAttribute('aria-pressed', mode === 'monthly');
+      annualBtn.setAttribute('aria-pressed', mode === 'annual');
+    }
+
+    monthlyBtn.addEventListener('click', () => setMode('monthly'));
+    annualBtn.addEventListener('click', () => setMode('annual'));
+  </script>
+</body>
+</html>

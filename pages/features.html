@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RepForge AI features — adaptive periodization, AI coaching, analytics, wearable sync and more." />
+  <title>Features — RepForge AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/pages/features.css" />
+</head>
+<body>
+
+  <header class="nav-wrapper" id="nav">
+    <nav class="nav-inner container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">RepForge <em>AI</em></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="features.html" class="nav-link active">Features</a></li>
+        <li><a href="science.html" class="nav-link">The Science</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="athletes.html" class="nav-link">Athletes</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn--ghost btn--sm">Log in</a>
+        <a href="signup.html" class="btn btn--primary btn--sm">Start Free</a>
+      </div>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false" id="navBurger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-progress" id="navProgress" aria-hidden="true"></div>
+  </header>
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true">
+    <button class="mobile-nav__close" id="mobileNavClose">✕</button>
+    <ul role="list">
+      <li><a href="../index.html#how-it-works">How It Works</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="science.html">The Science</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="athletes.html">Athletes</a></li>
+    </ul>
+    <div class="mobile-nav__cta">
+      <a href="login.html" class="btn btn--ghost btn--full">Log in</a>
+      <a href="signup.html" class="btn btn--primary btn--full">Start Free</a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+
+    <!-- ========================================================
+         PAGE HERO
+    ======================================================== -->
+    <section class="features-hero">
+      <div class="container">
+        <span class="eyebrow">The Platform</span>
+        <h1 class="features-hero__title">Built for Athletes Who<br>Take This Seriously.</h1>
+        <p class="features-hero__sub">Every feature exists for one reason: to help you build more muscle, get stronger, and recover smarter — systematically.</p>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         FEATURE NAV (sticky internal tabs)
+    ======================================================== -->
+    <nav class="feature-tabs" id="featureTabs" aria-label="Feature sections">
+      <div class="container">
+        <ul class="feature-tabs__list" role="list">
+          <li><a href="#programming" class="feature-tab active">Programming</a></li>
+          <li><a href="#coach" class="feature-tab">AI Coach</a></li>
+          <li><a href="#analytics" class="feature-tab">Analytics</a></li>
+          <li><a href="#library" class="feature-tab">Exercise Library</a></li>
+          <li><a href="#integrations" class="feature-tab">Integrations</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ========================================================
+         PROGRAMMING
+    ======================================================== -->
+    <section class="feature-section section" id="programming">
+      <div class="container">
+        <div class="feature-section__header">
+          <span class="eyebrow">Smart Programming</span>
+          <h2 class="section-title">The Periodization Engine</h2>
+          <p class="section-sub">Not a template picker. A genuine AI that calculates the right program for your biology, goals, and schedule — then evolves it every single week.</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card feature-card--wide">
+            <div class="feature-card__icon">⚙️</div>
+            <h3>Adaptive Mesocycle Planning</h3>
+            <p>RepForge breaks your training into structured 4–6 week mesocycles with built-in deload protocols. Volume starts below your Maximum Adaptive Volume (MAV) and progressively climbs — never crossed, always challenged.</p>
+            <div class="feature-tag-row">
+              <span class="feature-tag">MEV / MAV / MRV</span>
+              <span class="feature-tag">Auto deload</span>
+              <span class="feature-tag">Progressive overload</span>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🎯</div>
+            <h3>Individualized Volume Landmarks</h3>
+            <p>Every muscle group gets its own volume prescription. Your chest and your back don't recover at the same rate — RepForge knows that.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🔄</div>
+            <h3>Exercise Substitution AI</h3>
+            <p>No cable machine today? Gym's packed? Tell the AI and it swaps your movement for the next-best SFR-equivalent exercise available.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">📅</div>
+            <h3>Flexible Schedule Fitting</h3>
+            <p>3, 4, or 5 training days per week. Work travel, sick kids, holidays — the AI redistributes volume intelligently around your real life.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">⚡</div>
+            <h3>Rep Range Cycling</h3>
+            <p>Automatic cycling through strength, hypertrophy, and metabolic rep ranges across your mesocycle to maximize muscle fiber recruitment.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🏋️</div>
+            <h3>Equipment-Aware Generation</h3>
+            <p>Home gym? Bodyweight only? Full commercial setup? The program generator builds around exactly what you have access to.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         AI COACH
+    ======================================================== -->
+    <section class="feature-section feature-section--alt section" id="coach">
+      <div class="container">
+        <div class="feature-section__header">
+          <span class="eyebrow">AI Coach</span>
+          <h2 class="section-title">The Coach That<br>Never Clocks Out</h2>
+          <p class="section-sub">Context-aware, history-reading, and always available. Not a fitness chatbot — a training partner that knows every set you've ever done.</p>
+        </div>
+
+        <div class="coach-showcase">
+          <div class="coach-chat-demo">
+            <div class="mock-screen mock-screen--coach coach-demo-screen">
+              <div class="mock-screen__header">
+                <span class="mock-dot mock-dot--green"></span>
+                <span class="mock-title">RepForge AI Coach</span>
+                <span class="mock-badge">Session Active</span>
+              </div>
+              <div class="mock-chat coach-demo-chat" id="coachDemo">
+                <div class="mock-msg mock-msg--ai">
+                  <p>Good session today. Your RIR on Romanian deadlifts looked higher than logged — did those feel easier than expected?</p>
+                </div>
+                <div class="mock-msg mock-msg--user"><p>Yeah, the weight felt light today</p></div>
+                <div class="mock-msg mock-msg--ai">
+                  <p>Noted. Adding 5 kg to your next RDL session. Also — you're 3 weeks into this mesocycle and your hamstring volume is tracking ahead of your quad volume. Want me to balance the next block?</p>
+                </div>
+                <div class="mock-msg mock-msg--user"><p>Yes please, also I have a work trip next week</p></div>
+                <div class="mock-msg mock-msg--ai">
+                  <p>Got it. I'll compress your next training week into 3 hotel-gym-friendly sessions and push your deload a week out to compensate. Here's the revised plan →</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="coach-features">
+            <div class="coach-feature">
+              <span class="coach-feature__icon">🧠</span>
+              <div>
+                <h3>Full training history context</h3>
+                <p>The AI reads every workout you've ever logged. It knows your PRs, your bad weeks, your strong muscle groups — and programs accordingly.</p>
+              </div>
+            </div>
+            <div class="coach-feature">
+              <span class="coach-feature__icon">💤</span>
+              <div>
+                <h3>Sleep & recovery integration</h3>
+                <p>Log your sleep quality or connect a wearable, and the coach adjusts intensity targets before your session starts — not after a bad one.</p>
+              </div>
+            </div>
+            <div class="coach-feature">
+              <span class="coach-feature__icon">📊</span>
+              <div>
+                <h3>RPE-guided in-session coaching</h3>
+                <p>Real-time guidance on whether to add weight, repeat the weight, or dial back. The coach asks how your sets feel and reacts accordingly.</p>
+              </div>
+            </div>
+            <div class="coach-feature">
+              <span class="coach-feature__icon">🎙️</span>
+              <div>
+                <h3>Voice input during workouts</h3>
+                <p>Hands on the bar, not on your phone. Dictate your RPE, notes, or questions while you train.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         ANALYTICS
+    ======================================================== -->
+    <section class="feature-section section" id="analytics">
+      <div class="container">
+        <div class="feature-section__header">
+          <span class="eyebrow">Analytics</span>
+          <h2 class="section-title">Data That Actually<br>Changes How You Train</h2>
+          <p class="section-sub">Not a log. A dashboard that turns your session history into forward-looking intelligence.</p>
+        </div>
+
+        <div class="analytics-grid">
+          <div class="analytics-card analytics-card--strength">
+            <div class="analytics-card__header">
+              <span class="analytics-card__title">Estimated 1RM Trend</span>
+              <span class="analytics-card__delta analytics-delta--up">+18% / 8wk</span>
+            </div>
+            <div class="analytics-chart-demo" aria-hidden="true">
+              <svg viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="80">
+                <defs>
+                  <linearGradient id="aGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="var(--forge)" stop-opacity="0.25"/>
+                    <stop offset="100%" stop-color="var(--forge)" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0 88 L50 78 L100 70 L150 58 L200 42 L250 30 L300 18" stroke="var(--forge)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M0 88 L50 78 L100 70 L150 58 L200 42 L250 30 L300 18 L300 100 L0 100Z" fill="url(#aGrad)"/>
+                <circle cx="300" cy="18" r="4" fill="var(--forge)"/>
+              </svg>
+            </div>
+            <div class="analytics-stats-row">
+              <div class="analytics-stat">
+                <span class="analytics-stat__val">122 kg</span>
+                <span class="analytics-stat__key">Bench est. 1RM</span>
+              </div>
+              <div class="analytics-stat">
+                <span class="analytics-stat__val">+22 kg</span>
+                <span class="analytics-stat__key">8-week delta</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="analytics-card analytics-card--volume">
+            <div class="analytics-card__header">
+              <span class="analytics-card__title">Weekly Volume by Muscle</span>
+              <span class="analytics-badge">This mesocycle</span>
+            </div>
+            <div class="volume-bars" aria-label="Volume per muscle group">
+              <div class="volume-bar-item">
+                <span class="volume-bar-label">Chest</span>
+                <div class="volume-bar-track"><div class="volume-bar-fill" style="width:80%"></div></div>
+                <span class="volume-bar-num">16 sets</span>
+              </div>
+              <div class="volume-bar-item">
+                <span class="volume-bar-label">Back</span>
+                <div class="volume-bar-track"><div class="volume-bar-fill volume-bar-fill--high" style="width:100%"></div></div>
+                <span class="volume-bar-num">20 sets</span>
+              </div>
+              <div class="volume-bar-item">
+                <span class="volume-bar-label">Quads</span>
+                <div class="volume-bar-track"><div class="volume-bar-fill" style="width:70%"></div></div>
+                <span class="volume-bar-num">14 sets</span>
+              </div>
+              <div class="volume-bar-item">
+                <span class="volume-bar-label">Hamstrings</span>
+                <div class="volume-bar-track"><div class="volume-bar-fill" style="width:55%"></div></div>
+                <span class="volume-bar-num">11 sets</span>
+              </div>
+              <div class="volume-bar-item">
+                <span class="volume-bar-label">Shoulders</span>
+                <div class="volume-bar-track"><div class="volume-bar-fill" style="width:65%"></div></div>
+                <span class="volume-bar-num">13 sets</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="analytics-card analytics-card--fatigue">
+            <div class="analytics-card__header">
+              <span class="analytics-card__title">Fatigue Score</span>
+              <span class="analytics-delta--warn">Deload in 5 days</span>
+            </div>
+            <div class="fatigue-gauge" aria-label="Fatigue: 73 out of 100">
+              <svg viewBox="0 0 120 70" width="120" height="70" aria-hidden="true">
+                <path d="M10 60 A50 50 0 0 1 110 60" stroke="var(--dark-steel)" stroke-width="8" fill="none" stroke-linecap="round"/>
+                <path d="M10 60 A50 50 0 0 1 110 60" stroke="var(--amber-warn)" stroke-width="8" fill="none" stroke-linecap="round"
+                  stroke-dasharray="157" stroke-dashoffset="42"/>
+                <text x="60" y="58" text-anchor="middle" font-family="'Bebas Neue'" font-size="22" fill="var(--pure-white)">73</text>
+                <text x="60" y="68" text-anchor="middle" font-family="'JetBrains Mono'" font-size="7" fill="var(--mid-steel)" letter-spacing="1">/100</text>
+              </svg>
+            </div>
+            <p class="fatigue-note">Accumulation phase nearing peak. Schedule is on track — deload auto-inserted next week.</p>
+          </div>
+
+          <div class="analytics-card analytics-card--frequency">
+            <div class="analytics-card__header">
+              <span class="analytics-card__title">Training Consistency</span>
+              <span class="analytics-delta--up">96% / 12 weeks</span>
+            </div>
+            <div class="consistency-heatmap" aria-label="Training consistency heatmap">
+              <!-- 12 weeks × 7 days grid -->
+              <div class="heatmap-grid" id="heatmapGrid"></div>
+              <div class="heatmap-legend">
+                <span>Less</span>
+                <span class="heat-0"></span>
+                <span class="heat-1"></span>
+                <span class="heat-2"></span>
+                <span class="heat-3"></span>
+                <span>More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         EXERCISE LIBRARY
+    ======================================================== -->
+    <section class="feature-section feature-section--alt section" id="library">
+      <div class="container">
+        <div class="feature-section__header">
+          <span class="eyebrow">Exercise Library</span>
+          <h2 class="section-title">500+ Movements.<br>Every One Scored.</h2>
+          <p class="section-sub">Every exercise in our library has an SFR (Stimulus-to-Fatigue Ratio) score, muscle group targets, and injury risk flags — so the AI always picks the right tool for the job.</p>
+        </div>
+
+        <div class="library-search-demo">
+          <div class="search-bar">
+            <span class="search-icon" aria-hidden="true">🔍</span>
+            <input type="text" class="search-input" placeholder="Search exercises…" id="exerciseSearch" aria-label="Search exercise library" />
+          </div>
+
+          <div class="library-filters" role="group" aria-label="Filter by muscle group">
+            <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="chest">Chest</button>
+            <button class="filter-btn" data-filter="back">Back</button>
+            <button class="filter-btn" data-filter="legs">Legs</button>
+            <button class="filter-btn" data-filter="shoulders">Shoulders</button>
+            <button class="filter-btn" data-filter="arms">Arms</button>
+          </div>
+
+          <div class="exercise-list" id="exerciseList" role="list">
+            <!-- populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         INTEGRATIONS
+    ======================================================== -->
+    <section class="feature-section section" id="integrations">
+      <div class="container">
+        <div class="feature-section__header">
+          <span class="eyebrow">Integrations</span>
+          <h2 class="section-title">Plugs Into the Gear<br>You Already Have</h2>
+          <p class="section-sub">RepForge reads your wearable data so your program responds to your sleep, HRV, and recovery — not just what you logged last session.</p>
+        </div>
+
+        <div class="integrations-grid">
+          <div class="integration-card integration-card--connected">
+            <div class="integration-card__logo" aria-label="Garmin">⌚</div>
+            <div class="integration-card__info">
+              <strong>Garmin Connect</strong>
+              <span>Sleep, HRV, steps, stress score</span>
+            </div>
+            <span class="integration-status integration-status--on">Connected</span>
+          </div>
+          <div class="integration-card integration-card--connected">
+            <div class="integration-card__logo" aria-label="Apple Health">🍎</div>
+            <div class="integration-card__info">
+              <strong>Apple Health</strong>
+              <span>Sleep, HR, workout data</span>
+            </div>
+            <span class="integration-status integration-status--on">Connected</span>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card__logo" aria-label="Whoop">🔴</div>
+            <div class="integration-card__info">
+              <strong>WHOOP</strong>
+              <span>Recovery score, strain</span>
+            </div>
+            <span class="integration-status">Available</span>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card__logo" aria-label="Oura">💍</div>
+            <div class="integration-card__info">
+              <strong>Oura Ring</strong>
+              <span>Sleep stages, readiness</span>
+            </div>
+            <span class="integration-status">Available</span>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card__logo" aria-label="MyFitnessPal">🥗</div>
+            <div class="integration-card__info">
+              <strong>MyFitnessPal</strong>
+              <span>Calorie & protein tracking</span>
+            </div>
+            <span class="integration-status">Available</span>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card__logo" aria-label="Google Fit">🟢</div>
+            <div class="integration-card__info">
+              <strong>Google Fit</strong>
+              <span>Steps, active minutes</span>
+            </div>
+            <span class="integration-status">Available</span>
+          </div>
+          <div class="integration-card integration-card--elite">
+            <div class="integration-card__badge">Elite</div>
+            <div class="integration-card__logo" aria-label="Blood biomarker">🩸</div>
+            <div class="integration-card__info">
+              <strong>Lab Biomarkers</strong>
+              <span>Testosterone, cortisol, CRP</span>
+            </div>
+            <span class="integration-status">Elite plan</span>
+          </div>
+          <div class="integration-card integration-card--elite">
+            <div class="integration-card__badge">Elite</div>
+            <div class="integration-card__logo" aria-label="DEXA scan">📡</div>
+            <div class="integration-card__info">
+              <strong>DEXA Scan Import</strong>
+              <span>Body composition calibration</span>
+            </div>
+            <span class="integration-status">Elite plan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta section">
+      <div class="container">
+        <div class="final-cta__inner">
+          <h2 class="final-cta__headline">Every Feature. Free for 14 Days.</h2>
+          <p class="final-cta__sub">No credit card. No commitment. Just the best training app you've ever used.</p>
+          <a href="signup.html" class="btn btn--primary btn--xl btn--forge">
+            <span class="btn__text">Start Your Free Trial</span>
+            <span class="btn__icon" aria-hidden="true">→</span>
+          </a>
+          <p class="final-cta__small">No credit card required · Cancel anytime · Takes 3 minutes</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:none;padding-top:0">
+        <p class="footer__copy">© 2025 RepForge AI Inc. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/scroll-reveal.js" defer></script>
+  <script src="../js/features.js" defer></script>
+</body>
+</html>
