@@ -1,266 +1,873 @@
+@'
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RepForge AI Privacy Policy — how we collect, use, and protect your data." />
+  <meta name="description" content="Read the RepForge AI Privacy Policy, including account, training, Community, media, retention and deletion data practices." />
   <title>Privacy Policy — RepForge AI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="theme-color" content="#080d0f" />
+
+  <link rel="canonical" href="https://repforgeai.pages.dev/pages/privacy.html" />
+  <link rel="icon" href="../assets/images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RepForge AI" />
+  <meta property="og:title" content="Privacy Policy — RepForge AI" />
+  <meta property="og:description" content="Read the RepForge AI Privacy Policy, including account, training, Community, media, retention and deletion data practices." />
+  <meta property="og:url" content="https://repforgeai.pages.dev/pages/privacy.html" />
+  <meta property="og:image" content="https://repforgeai.pages.dev/assets/images/repforge-social-icon.png" />
+  <meta property="og:image:alt" content="RepForge AI" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Privacy Policy — RepForge AI" />
+  <meta name="twitter:description" content="Read the RepForge AI Privacy Policy, including account, training, Community, media, retention and deletion data practices." />
+  <meta name="twitter:image" content="https://repforgeai.pages.dev/assets/images/repforge-social-icon.png" />
+
+
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/tokens.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/layout.css" />
-  <link rel="stylesheet" href="../css/pages/legal.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/mobile-accessibility.css" />
 </head>
-<body>
 
+<body>
   <header class="nav-wrapper" id="nav">
     <nav class="nav-inner container">
-      <a href="../index.html" class="nav-logo">
-        <span class="logo-icon">⬡</span>
-        <span class="logo-text">RepForge <em>AI</em></span>
+      <a
+        href="../index.html"
+        class="nav-logo nav-logo--brand"
+        aria-label="RepForge AI Home"
+      >
+        <img
+          src="../assets/images/repforge-anvil-transparent.png"
+          alt=""
+          class="nav-logo__anvil"
+          aria-hidden="true"
+        />
+        <span class="logo-text">RepForge <span>AI</span></span>
       </a>
+
       <ul class="nav-links" role="list">
-        <li><a href="../index.html#how-it-works" class="nav-link">How It Works</a></li>
-        <li><a href="features.html" class="nav-link">Features</a></li>
-        <li><a href="science.html" class="nav-link">The Science</a></li>
-        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-        <li><a href="athletes.html" class="nav-link">Athletes</a></li>
+        <li>
+          <a href="training-system.html" class="nav-link">Training System</a>
+        </li>
+        <li>
+          <a href="performance.html" class="nav-link">Performance</a>
+        </li>
+        <li>
+          <a href="recovery.html" class="nav-link">Recovery</a>
+        </li>
+        <li>
+          <a href="community.html" class="nav-link">Community</a>
+        </li>
+        <li>
+          <a href="features.html" class="nav-link">All Features</a>
+        </li>
       </ul>
+
       <div class="nav-actions">
-        <a href="login.html" class="btn btn--ghost btn--sm">Log in</a>
-        <a href="signup.html" class="btn btn--primary btn--sm">Start Free</a>
+        <a href="../index.html" class="btn btn--primary btn--sm">Back Home</a>
       </div>
-      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false" id="navBurger">
-        <span></span><span></span><span></span>
+
+      <button
+        class="nav-burger"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        id="navBurger"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </nav>
+
     <div class="nav-progress" id="navProgress" aria-hidden="true"></div>
   </header>
-  <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true">
-    <button class="mobile-nav__close" id="mobileNavClose">✕</button>
+
+  <div
+    class="mobile-nav"
+    id="mobileNav"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Navigation"
+  >
+    <button
+      class="mobile-nav__close"
+      id="mobileNavClose"
+      aria-label="Close menu"
+    >
+      ✕
+    </button>
+
     <ul role="list">
-      <li><a href="../index.html#how-it-works">How It Works</a></li>
-      <li><a href="features.html">Features</a></li>
-      <li><a href="science.html">The Science</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="athletes.html">Athletes</a></li>
+      <li><a href="training-system.html">Training System</a></li>
+      <li><a href="performance.html">Performance</a></li>
+      <li><a href="recovery.html">Recovery</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="features.html">All Features</a></li>
     </ul>
+
     <div class="mobile-nav__cta">
-      <a href="login.html" class="btn btn--ghost btn--full">Log in</a>
-      <a href="signup.html" class="btn btn--primary btn--full">Start Free</a>
+      <a href="../index.html" class="btn btn--primary btn--full">Back Home</a>
     </div>
   </div>
+
   <div class="overlay" id="overlay"></div>
 
-  <main>
-    <div class="legal-layout">
+  <main class="legal-page">
+    <section class="legal-hero">
+      <div class="container legal-hero__inner">
+        <span class="eyebrow">Legal · Privacy</span>
 
-      <!-- Sidebar TOC -->
-      <aside class="legal-toc" aria-label="Table of contents">
-        <p class="legal-toc__title">Contents</p>
-        <nav>
-          <ul role="list">
-            <li><a href="#overview" class="toc-link">Overview</a></li>
-            <li><a href="#collection" class="toc-link">Data We Collect</a></li>
-            <li><a href="#use" class="toc-link">How We Use It</a></li>
-            <li><a href="#sharing" class="toc-link">Sharing & Disclosure</a></li>
-            <li><a href="#retention" class="toc-link">Data Retention</a></li>
-            <li><a href="#rights" class="toc-link">Your Rights</a></li>
-            <li><a href="#security" class="toc-link">Security</a></li>
-            <li><a href="#cookies" class="toc-link">Cookies</a></li>
-            <li><a href="#children" class="toc-link">Children</a></li>
-            <li><a href="#changes" class="toc-link">Policy Changes</a></li>
-            <li><a href="#contact" class="toc-link">Contact Us</a></li>
-          </ul>
-        </nav>
+        <h1>
+          Privacy<br />
+          <span>Policy.</span>
+        </h1>
+
+        <p class="legal-hero__lead">
+          This Privacy Policy explains how RepForge AI accesses, collects,
+          uses, stores, shares and deletes information when you use the
+          RepForge AI mobile application, Community features and related
+          website services.
+        </p>
+
+        <div class="legal-hero__meta">
+          <span>Effective: August 31, 2026</span>
+          <span>RepForge AI</span>
+          <a href="mailto:repforgeaisupport@gmail.com">
+            repforgeaisupport@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container legal-layout">
+      <aside class="legal-toc">
+        <span>CONTENTS</span>
+
+        <a href="#scope">1. Scope</a>
+        <a href="#data-we-handle">2. Data we handle</a>
+        <a href="#authentication">3. Account & authentication</a>
+        <a href="#training">4. Training data</a>
+        <a href="#intelligence">5. Training intelligence</a>
+        <a href="#community-data">6. Community</a>
+        <a href="#media">7. Photos & media</a>
+        <a href="#nutrition">8. Nutrition</a>
+        <a href="#technical">9. Technical data</a>
+        <a href="#purposes">10. How data is used</a>
+        <a href="#sharing">11. Service providers</a>
+        <a href="#public-sharing">12. Public sharing</a>
+        <a href="#analytics">13. Analytics & advertising</a>
+        <a href="#security">14. Security</a>
+        <a href="#retention">15. Retention</a>
+        <a href="#deletion">16. Account deletion</a>
+        <a href="#moderation-retention">17. Safety records</a>
+        <a href="#international">18. International processing</a>
+        <a href="#choices">19. Your choices</a>
+        <a href="#children">20. Age & children's privacy</a>
+        <a href="#changes">21. Changes</a>
+        <a href="#contact">22. Contact</a>
       </aside>
 
-      <!-- Main content -->
       <article class="legal-content">
-        <div class="legal-header">
-          <span class="eyebrow">Legal</span>
-          <h1 class="legal-title">Privacy Policy</h1>
-          <p class="legal-meta">Last updated: <time datetime="2025-06-01">June 1, 2025</time> · Effective: June 1, 2025</p>
-        </div>
+        <section id="scope">
+          <span class="legal-section-number">01</span>
+          <h2>Scope and who we are</h2>
 
-        <section id="overview" class="legal-section">
-          <h2>Overview</h2>
-          <p>RepForge AI Inc. ("RepForge," "we," "our," or "us") is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our application, website, and related services (collectively, the "Service").</p>
-          <p>By using the Service, you agree to the collection and use of information in accordance with this policy. If you do not agree, please discontinue use of the Service.</p>
-          <div class="legal-highlight">
-            <strong>The short version:</strong> We collect your training data, account info, and usage data to power the AI. We don't sell it. You can export or delete it at any time. We use industry-standard encryption.
+          <p>
+            This Privacy Policy applies to <strong>RepForge AI</strong>,
+            including the RepForge AI mobile application, its Community
+            features, associated account services and public RepForge AI
+            website pages.
+          </p>
+
+          <p>
+            In this Policy, “RepForge”, “we”, “us” and “our” refer to the
+            operator of the RepForge AI service.
+          </p>
+
+          <p>
+            Questions about privacy or this Policy can be sent to
+            <a href="mailto:repforgeaisupport@gmail.com">
+              repforgeaisupport@gmail.com
+            </a>.
+          </p>
+        </section>
+
+        <section id="data-we-handle">
+          <span class="legal-section-number">02</span>
+          <h2>Categories of information we handle</h2>
+
+          <p>
+            Depending on how you use RepForge, the service may process the
+            following categories of information:
+          </p>
+
+          <ul>
+            <li>
+              account and authentication information;
+            </li>
+            <li>
+              workout, exercise and training-history information;
+            </li>
+            <li>
+              training preferences and athlete-profile settings;
+            </li>
+            <li>
+              training-state, progression and recovery information generated
+              from your training history;
+            </li>
+            <li>
+              profile information you choose to make available through
+              Community;
+            </li>
+            <li>
+              Community posts, personal-record posts, photos and interactions;
+            </li>
+            <li>
+              Community safety and moderation information such as reports and
+              block records;
+            </li>
+            <li>
+              nutrition information that you enter into the local nutrition
+              feature;
+            </li>
+            <li>
+              device, network and request information necessarily processed by
+              infrastructure providers when the app communicates with their
+              services.
+            </li>
+          </ul>
+        </section>
+
+        <section id="authentication">
+          <span class="legal-section-number">03</span>
+          <h2>Account and authentication information</h2>
+
+          <p>
+            RepForge supports account authentication using Google Sign-In and
+            Firebase Authentication.
+          </p>
+
+          <p>
+            When you sign in, information necessary to authenticate and
+            identify your RepForge account may be processed, such as your
+            Google/Firebase account identifier, email address and available
+            account profile information supplied through the authentication
+            flow.
+          </p>
+
+          <p>
+            We use this information to:
+          </p>
+
+          <ul>
+            <li>create and identify your RepForge account;</li>
+            <li>authenticate access to account-backed features;</li>
+            <li>associate cloud workout records with the correct account;</li>
+            <li>protect cloud records from cross-account access;</li>
+            <li>support account deletion and account recovery workflows.</li>
+          </ul>
+        </section>
+
+        <section id="training">
+          <span class="legal-section-number">04</span>
+          <h2>Workout and training data</h2>
+
+          <p>
+            RepForge is a training application. Information you enter or
+            generate through training features may include:
+          </p>
+
+          <ul>
+            <li>workout-session dates and session history;</li>
+            <li>exercise names and exercise selections;</li>
+            <li>sets and repetitions;</li>
+            <li>weight or load;</li>
+            <li>repetitions in reserve (RIR) and effort information;</li>
+            <li>exercise notes and session notes;</li>
+            <li>personal records and historical performance references;</li>
+            <li>planned workouts and generated weekly plans;</li>
+            <li>training goal, experience level and preferred split;</li>
+            <li>selected equipment;</li>
+            <li>muscle-focus preferences;</li>
+            <li>protected-area preferences;</li>
+            <li>session and workout completion information.</li>
+          </ul>
+
+          <p>
+            Saved workout history associated with a signed-in account may be
+            synchronized through RepForge cloud workout services.
+          </p>
+        </section>
+
+        <section id="intelligence">
+          <span class="legal-section-number">05</span>
+          <h2>Training intelligence and derived information</h2>
+
+          <p>
+            RepForge processes training history and user-provided training
+            context to produce training-related outputs.
+          </p>
+
+          <p>
+            Depending on available history, these outputs may include:
+          </p>
+
+          <ul>
+            <li>prescribed exercise targets;</li>
+            <li>next-set or next-session targets;</li>
+            <li>progression decisions and progression state;</li>
+            <li>performance trends;</li>
+            <li>readiness and recovery-related signals;</li>
+            <li>local or muscle-level recovery presentation;</li>
+            <li>fatigue-related signals;</li>
+            <li>training recommendations and explanations;</li>
+            <li>session-review summaries;</li>
+            <li>generated training-week structure;</li>
+            <li>Plan Fit and related planning assessments;</li>
+            <li>training prediction and confidence information.</li>
+          </ul>
+
+          <p>
+            These outputs are used to provide the RepForge training experience.
+            They are training guidance, not medical diagnosis or medical
+            treatment.
+          </p>
+        </section>
+
+        <section id="community-data">
+          <span class="legal-section-number">06</span>
+          <h2>Community and public profile information</h2>
+
+          <p>
+            If you use RepForge Community, additional information may be
+            stored and processed, including:
+          </p>
+
+          <ul>
+            <li>your public Community profile;</li>
+            <li>profile/avatar media;</li>
+            <li>workout posts;</li>
+            <li>personal-record posts;</li>
+            <li>photo posts and training photos;</li>
+            <li>Kudos you give to posts;</li>
+            <li>notifications generated by Community activity;</li>
+            <li>reports you submit;</li>
+            <li>block and unblock records;</li>
+            <li>Community policy or guideline acceptance records.</li>
+          </ul>
+
+          <p>
+            Information you intentionally publish to Community is designed to
+            be visible to other RepForge users according to the Community
+            feature.
+          </p>
+
+          <p>
+            Do not publish information that you do not want other Community
+            users to see.
+          </p>
+        </section>
+
+        <section id="media">
+          <span class="legal-section-number">07</span>
+          <h2>Profile images, Community photos and media access</h2>
+
+          <p>
+            RepForge allows user-initiated selection or capture of images for
+            features such as public profile avatars and Community photo posts.
+          </p>
+
+          <p>
+            The Android application may request camera access when required for
+            a user-initiated image feature.
+          </p>
+
+          <p>
+            RepForge does not require broad Android storage or
+            <code>READ_MEDIA_IMAGES</code> permission in the current Android
+            configuration in order to continuously read your photo library.
+          </p>
+
+          <p>
+            Media used for profile avatars or Community photo posts may be
+            uploaded to and delivered through ImageKit infrastructure.
+            RepForge also uses an authenticated Cloudflare Worker in the media
+            authorization and deletion flow.
+          </p>
+        </section>
+
+        <section id="nutrition">
+          <span class="legal-section-number">08</span>
+          <h2>Nutrition information</h2>
+
+          <p>
+            RepForge includes a nutrition logging feature where you may enter
+            nutrition targets and intake information.
+          </p>
+
+          <p>
+            In the current product implementation,
+            nutrition information is stored locally on the device and is not
+            synchronized to the RepForge workout cloud.
+          </p>
+
+          <p>
+            Nutrition entries do <strong>not</strong> currently influence
+            RepForge AI readiness, fatigue, recovery, progression targets,
+            workout targets, deload decisions or Visual AI decisions.
+          </p>
+
+          <p>
+            Clearing local app data, resetting local RepForge data or removing
+            application storage may remove locally stored nutrition
+            information.
+          </p>
+        </section>
+
+        <section id="technical">
+          <span class="legal-section-number">09</span>
+          <h2>Technical, device and network information</h2>
+
+          <p>
+            When RepForge communicates with authentication, cloud or media
+            services, those services may necessarily process technical
+            information needed to receive, secure and deliver the request.
+          </p>
+
+          <p>
+            Depending on the provider and request, this may include information
+            such as:
+          </p>
+
+          <ul>
+            <li>IP address;</li>
+            <li>device or platform information;</li>
+            <li>network-request metadata;</li>
+            <li>authentication tokens or service identifiers;</li>
+            <li>security, abuse-prevention or infrastructure logs.</li>
+          </ul>
+
+          <p>
+            We do not describe this technical processing as behavioral
+            advertising analytics.
+          </p>
+        </section>
+
+        <section id="purposes">
+          <span class="legal-section-number">10</span>
+          <h2>How we use information</h2>
+
+          <p>
+            RepForge processes information for purposes including:
+          </p>
+
+          <ul>
+            <li>providing and operating workout features;</li>
+            <li>authenticating accounts;</li>
+            <li>synchronizing cloud workout history;</li>
+            <li>generating training plans and training guidance;</li>
+            <li>calculating and presenting progression information;</li>
+            <li>presenting readiness, fatigue and recovery information;</li>
+            <li>saving workout and session history;</li>
+            <li>operating Community profiles and posts;</li>
+            <li>delivering Community notifications;</li>
+            <li>processing Kudos and other Community interactions;</li>
+            <li>supporting reporting, blocking and abuse prevention;</li>
+            <li>uploading, delivering and deleting Community media;</li>
+            <li>supporting account deletion;</li>
+            <li>maintaining service security and reliability;</li>
+            <li>responding to support and privacy requests;</li>
+            <li>complying with applicable legal obligations.</li>
+          </ul>
+        </section>
+
+        <section id="sharing">
+          <span class="legal-section-number">11</span>
+          <h2>Service providers and data sharing</h2>
+
+          <p>
+            RepForge uses third-party infrastructure providers to operate
+            necessary product functionality.
+          </p>
+
+          <div class="legal-provider-grid">
+            <article>
+              <strong>Google / Firebase</strong>
+              <p>
+                Used for Google Sign-In, Firebase Authentication, Firestore
+                cloud data and account-backed workout services.
+              </p>
+            </article>
+
+            <article>
+              <strong>ImageKit</strong>
+              <p>
+                Used for upload, storage, processing and delivery of profile
+                avatar and Community image media.
+              </p>
+            </article>
+
+            <article>
+              <strong>Cloudflare</strong>
+              <p>
+                Used for authenticated media authorization/deletion
+                infrastructure supporting the ImageKit media flow.
+              </p>
+            </article>
           </div>
+
+          <p>
+            These providers process information only as necessary for the
+            services they provide and according to their own applicable terms,
+            privacy policies and data-processing practices.
+          </p>
+
+          <p>
+            We may also disclose information where reasonably necessary to
+            comply with law, enforce rights, investigate abuse, protect users
+            or protect the security and integrity of RepForge.
+          </p>
         </section>
 
-        <section id="collection" class="legal-section">
-          <h2>Data We Collect</h2>
+        <section id="public-sharing">
+          <span class="legal-section-number">12</span>
+          <h2>Information you choose to make public</h2>
 
-          <h3>Account Information</h3>
-          <p>When you create an account, we collect your name, email address, and (optionally) a profile photo. If you sign up via Google or GitHub, we receive the data those providers share with us based on your OAuth permissions.</p>
+          <p>
+            Workout data stored as private account history is not automatically
+            a public Community post.
+          </p>
 
-          <h3>Training & Health Data</h3>
-          <p>The core data you provide to use RepForge includes:</p>
+          <p>
+            When you intentionally publish a workout, personal record,
+            training photo, profile information or other Community content,
+            that published content may be visible to other RepForge Community
+            users.
+          </p>
+
+          <p>
+            RepForge also supports native device sharing for supported
+            Community content. If you choose to use your device's sharing
+            interface, information is transferred to the destination you
+            select and becomes subject to that destination's privacy
+            practices.
+          </p>
+        </section>
+
+        <section id="analytics">
+          <span class="legal-section-number">13</span>
+          <h2>Analytics, advertising and sale of information</h2>
+
+          <p>
+            In the current production implementation, RepForge
+            does not actively use a third-party behavioral analytics SDK for
+            product-tracking or advertising-profile purposes.
+          </p>
+
+          <p>
+            RepForge does not currently use an advertising SDK to build
+            advertising profiles or serve targeted third-party advertising.
+          </p>
+
+          <p>
+            RepForge does not sell personal information to advertisers.
+          </p>
+
+          <p>
+            Infrastructure providers may still process technical request or
+            security information necessary to operate their services, as
+            described above.
+          </p>
+        </section>
+
+        <section id="security">
+          <span class="legal-section-number">14</span>
+          <h2>Security and data handling</h2>
+
+          <p>
+            RepForge uses technical and organizational measures intended to
+            protect personal information and account data.
+          </p>
+
+          <p>
+            Measures in the current implementation include:
+          </p>
+
           <ul>
-            <li>Workout logs (exercises, sets, reps, load, RPE, notes)</li>
-            <li>Body measurements (weight, estimated body fat percentage)</li>
-            <li>Sleep quality ratings you manually enter</li>
-            <li>Recovery and readiness notes</li>
-            <li>Goals, training age, and equipment preferences entered during onboarding</li>
+            <li>Firebase-backed account authentication;</li>
+            <li>authenticated access to account-backed cloud features;</li>
+            <li>user-scoped cloud workout records;</li>
+            <li>authenticated Community media operations;</li>
+            <li>
+              ownership checks in supported media deletion operations;
+            </li>
+            <li>network transport through HTTPS/TLS-based service endpoints;</li>
+            <li>account deletion workflows that remove associated account data;</li>
+            <li>
+              limiting Android permissions rather than requesting broad access
+              that is not needed for product functionality.
+            </li>
           </ul>
 
-          <h3>Wearable & Third-Party Data</h3>
-          <p>If you connect a wearable device or third-party service (Garmin, Apple Health, WHOOP, Oura), we receive the data you authorize through those integrations, which may include:</p>
+          <p>
+            No system can guarantee absolute security. We therefore cannot
+            promise that unauthorized access, loss or misuse can never occur.
+          </p>
+        </section>
+
+        <section id="retention">
+          <span class="legal-section-number">15</span>
+          <h2>Data retention</h2>
+
+          <p>
+            We retain information for as long as reasonably necessary to
+            provide the RepForge service, maintain your account, preserve your
+            saved training history, operate Community features, satisfy
+            security or moderation needs and meet applicable legal
+            obligations.
+          </p>
+
+          <p>
+            Retention depends on the type of information:
+          </p>
+
           <ul>
-            <li>Heart rate variability (HRV)</li>
-            <li>Resting heart rate</li>
-            <li>Sleep stages and duration</li>
-            <li>Daily step count and activity level</li>
-            <li>Stress scores</li>
+            <li>
+              account and cloud workout data may be retained while your
+              RepForge account remains active;
+            </li>
+            <li>
+              Community content may remain available until it is removed
+              through the relevant product or account-deletion process;
+            </li>
+            <li>
+              local-only information may remain on the device until it is
+              reset, cleared or application storage is removed;
+            </li>
+            <li>
+              safety, abuse-prevention and moderation records may be retained
+              longer when reasonably necessary for those purposes or required
+              by law.
+            </li>
           </ul>
-          <p>We only access the data you explicitly authorize through each integration's consent flow. You can revoke access at any time from your account settings or from the third-party app.</p>
 
-          <h3>Usage Data</h3>
-          <p>We automatically collect certain information when you use the Service:</p>
+          <p>
+            We do not retain data indefinitely merely because it can be
+            retained.
+          </p>
+        </section>
+
+        <section id="deletion">
+          <span class="legal-section-number">16</span>
+          <h2>Account deletion</h2>
+
+          <p>
+            RepForge provides an in-app account deletion flow.
+          </p>
+
+          <p>
+            In the current app, account deletion is available from:
+          </p>
+
+          <div class="legal-path">
+            Settings
+            <span>→</span>
+            Danger Zone
+            <span>→</span>
+            Delete account
+          </div>
+
+          <p>
+            You may also use our external account-deletion resource:
+            <a href="delete-account.html">Delete your RepForge AI account</a>.
+          </p>
+
+          <p>
+            You may contact
+            <a href="mailto:repforgeaisupport@gmail.com">
+              repforgeaisupport@gmail.com
+            </a>
+            if you cannot access the app or need help with a deletion request.
+          </p>
+
+          <p>
+            The current account-deletion workflow is designed to remove
+            account-associated data including, as applicable:
+          </p>
+
           <ul>
-            <li>Device type, operating system, and browser version</li>
-            <li>IP address (anonymized after 30 days)</li>
-            <li>Pages and features you access</li>
-            <li>Session duration and frequency</li>
-            <li>Error logs and crash reports</li>
+            <li>Firebase Authentication account data;</li>
+            <li>cloud workout sessions;</li>
+            <li>cloud deleted-session records;</li>
+            <li>the user's public Community profile;</li>
+            <li>profile avatar media;</li>
+            <li>Community posts authored by the user;</li>
+            <li>Community photo media associated with authored posts;</li>
+            <li>Kudos given by the user and related notification records;</li>
+            <li>notifications owned by the user;</li>
+            <li>block records associated with the user's own account;</li>
+            <li>reports submitted by the user;</li>
+            <li>Community policy-acceptance records associated with the user;</li>
+            <li>local RepForge user data on the device where deletion runs.</li>
           </ul>
 
-          <h3>Payment Information</h3>
-          <p>Payment processing is handled by Stripe. RepForge never stores your full card number. We only receive a payment token and the last 4 digits of your card for display purposes.</p>
+          <p>
+            Account deletion means deletion of the RepForge account and
+            associated user data covered by the deletion workflow. It is not
+            merely an account suspension or deactivation.
+          </p>
         </section>
 
-        <section id="use" class="legal-section">
-          <h2>How We Use Your Data</h2>
-          <p>We use the data we collect to:</p>
+        <section id="moderation-retention">
+          <span class="legal-section-number">17</span>
+          <h2>Safety and moderation records after deletion</h2>
+
+          <p>
+            Certain records created by other users or generated for legitimate
+            safety, abuse-prevention, dispute or legal purposes may need to be
+            retained even after an account is deleted.
+          </p>
+
+          <p>
+            For example, a report submitted by another Community user about
+            content or behavior may be retained where necessary to:
+          </p>
+
           <ul>
-            <li><strong>Power the AI engine</strong> — Generate, adapt, and personalize your training programs based on your history, goals, and recovery data</li>
-            <li><strong>Operate the AI Coach</strong> — Provide contextual coaching responses grounded in your actual training data</li>
-            <li><strong>Improve the Service</strong> — Analyze aggregate, anonymized usage patterns to improve program quality, UI, and AI accuracy</li>
-            <li><strong>Send transactional communications</strong> — Account confirmations, password resets, subscription receipts, and critical service updates</li>
-            <li><strong>Provide customer support</strong> — Respond to your inquiries and resolve issues</li>
-            <li><strong>Research</strong> — With your explicit consent, contribute your anonymized data to internal research improving hypertrophy science models</li>
+            <li>investigate abuse or policy violations;</li>
+            <li>protect Community users;</li>
+            <li>prevent repeated misuse;</li>
+            <li>maintain security or moderation integrity;</li>
+            <li>comply with applicable law or legal process.</li>
           </ul>
-          <p>We do <strong>not</strong> use your personal training data to train models for third parties, sell insights to advertisers, or build behavioral advertising profiles.</p>
+
+          <p>
+            Such retention is limited to what is reasonably necessary for the
+            relevant safety, security, moderation or legal purpose.
+          </p>
         </section>
 
-        <section id="sharing" class="legal-section">
-          <h2>Sharing & Disclosure</h2>
-          <p>We do not sell your personal data. We share data only in the following limited circumstances:</p>
+        <section id="international">
+          <span class="legal-section-number">18</span>
+          <h2>International service infrastructure</h2>
 
-          <h3>Service Providers</h3>
-          <p>We work with trusted third-party vendors who process data on our behalf under strict data processing agreements. These include cloud infrastructure (AWS), payment processing (Stripe), analytics (Posthog, anonymized), email delivery (Postmark), and error monitoring (Sentry).</p>
+          <p>
+            RepForge relies on service providers including Google/Firebase,
+            ImageKit and Cloudflare.
+          </p>
 
-          <h3>Legal Requirements</h3>
-          <p>We may disclose your information if required by law, subpoena, or other legal process, or if we have a good faith belief that disclosure is necessary to protect our rights, your safety, or the safety of others.</p>
-
-          <h3>Business Transfers</h3>
-          <p>If RepForge AI is acquired or merged, your data may be transferred as part of that transaction. We will notify you via email and in-app notification before any transfer occurs and give you the option to delete your account.</p>
-
-          <h3>With Your Consent</h3>
-          <p>We may share data for other purposes with your explicit prior consent.</p>
+          <p>
+            These providers may operate infrastructure in multiple countries
+            and regions. As a result, information processed through their
+            services may be handled outside the country in which you live,
+            subject to the providers' infrastructure, agreements and
+            applicable legal safeguards.
+          </p>
         </section>
 
-        <section id="retention" class="legal-section">
-          <h2>Data Retention</h2>
-          <p>We retain your personal data for as long as your account is active. When you delete your account, we permanently delete your personal data within 30 days, except where we are legally required to retain it for longer (e.g., financial records for tax purposes — retained for 7 years in accordance with applicable law, but this applies only to transaction records, not training data).</p>
-          <p>Anonymized, aggregated data derived from your sessions (which cannot be linked back to you) may be retained indefinitely for research and product improvement purposes.</p>
-        </section>
+        <section id="choices">
+          <span class="legal-section-number">19</span>
+          <h2>Your choices and controls</h2>
 
-        <section id="rights" class="legal-section">
-          <h2>Your Rights</h2>
-          <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+          <p>
+            Depending on the feature, you may:
+          </p>
+
           <ul>
-            <li><strong>Access</strong> — Request a copy of all personal data we hold about you</li>
-            <li><strong>Correction</strong> — Request correction of inaccurate or incomplete data</li>
-            <li><strong>Deletion</strong> — Request deletion of your personal data ("right to be forgotten")</li>
-            <li><strong>Portability</strong> — Export your training data in JSON or CSV format from Account Settings → Export Data</li>
-            <li><strong>Objection</strong> — Object to certain processing activities</li>
-            <li><strong>Restriction</strong> — Request restriction of processing in certain circumstances</li>
-            <li><strong>Withdrawal of consent</strong> — Withdraw consent for processing activities that rely on consent</li>
+            <li>choose what training information you enter;</li>
+            <li>choose whether to publish Community content;</li>
+            <li>choose whether to add a Community profile avatar;</li>
+            <li>choose whether to attach a photo to a Community post;</li>
+            <li>manage Community block/unblock controls;</li>
+            <li>remove or reset local data through available app controls;</li>
+            <li>delete your RepForge account;</li>
+            <li>
+              contact us about privacy or account-data questions at
+              repforgeaisupport@gmail.com.
+            </li>
           </ul>
-          <p>To exercise any of these rights, go to <strong>Account Settings → Privacy</strong> or email us at <a href="mailto:privacy@repforge.ai">privacy@repforge.ai</a>. We will respond within 30 days.</p>
-          <p>EU/EEA residents have additional rights under the GDPR. California residents have rights under the CCPA/CPRA. We honor these rights regardless of your location.</p>
         </section>
 
-        <section id="security" class="legal-section">
-          <h2>Security</h2>
-          <p>We take security seriously and implement appropriate technical and organizational measures to protect your data:</p>
-          <ul>
-            <li>All data is encrypted in transit using TLS 1.3</li>
-            <li>All data is encrypted at rest using AES-256</li>
-            <li>Access to production systems is restricted and logged</li>
-            <li>We conduct regular penetration tests and security audits</li>
-            <li>We offer two-factor authentication (2FA) for all accounts</li>
-            <li>Passwords are hashed using bcrypt with per-user salts</li>
-          </ul>
-          <p>No method of transmission over the internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your data, we cannot guarantee absolute security.</p>
+        <section id="children">
+          <span class="legal-section-number">20</span>
+          <h2>Age and children's privacy</h2>
+
+          <p>
+            RepForge is a training application and is not designed as a
+            child-directed service.
+          </p>
+
+          <p>
+            Users who are below the age at which they may independently
+            consent to processing of personal information under applicable law
+            should use the service only with appropriate authorization from a
+            parent or legal guardian where required.
+          </p>
+
+          <p>
+            We do not knowingly seek to collect personal information from
+            children in violation of applicable law.
+          </p>
+
+          <p>
+            If we learn that information was collected in circumstances that
+            require deletion under applicable children's privacy law, we will
+            take reasonable steps to delete it.
+          </p>
         </section>
 
-        <section id="cookies" class="legal-section">
-          <h2>Cookies & Tracking</h2>
-          <p>We use cookies and similar technologies for:</p>
-          <ul>
-            <li><strong>Essential cookies</strong> — Authentication, session management, security (cannot be disabled)</li>
-            <li><strong>Analytics cookies</strong> — Anonymized usage statistics (opt-out available)</li>
-            <li><strong>Preference cookies</strong> — Remembering your settings and preferences</li>
-          </ul>
-          <p>We do <strong>not</strong> use advertising cookies or allow third-party advertising networks to track you through our Service. You can manage cookie preferences from the Cookie Settings link in our footer.</p>
+        <section id="changes">
+          <span class="legal-section-number">21</span>
+          <h2>Changes to this Privacy Policy</h2>
+
+          <p>
+            We may update this Privacy Policy when RepForge features, data
+            handling practices, service providers or legal requirements
+            change.
+          </p>
+
+          <p>
+            When we update this Policy, we will revise the effective date shown
+            at the top of the page and publish the current version at the
+            RepForge Privacy Policy URL.
+          </p>
+
+          <p>
+            Material product changes that affect user data handling may also
+            require corresponding updates to in-app disclosures and Google
+            Play Data Safety declarations.
+          </p>
         </section>
 
-        <section id="children" class="legal-section">
-          <h2>Children's Privacy</h2>
-          <p>The Service is not directed to individuals under the age of 16. We do not knowingly collect personal information from children under 16. If you become aware that a child has provided us with personal data, please contact us at <a href="mailto:privacy@repforge.ai">privacy@repforge.ai</a> and we will take steps to delete such information.</p>
-        </section>
+        <section id="contact">
+          <span class="legal-section-number">22</span>
+          <h2>Contact us</h2>
 
-        <section id="changes" class="legal-section">
-          <h2>Policy Changes</h2>
-          <p>We may update this Privacy Policy from time to time. When we make material changes, we will notify you by email and in-app notification at least 14 days before the changes take effect. Your continued use of the Service after the effective date constitutes acceptance of the updated policy.</p>
-          <p>We maintain a version history of this policy available on request.</p>
-        </section>
+          <p>
+            For privacy questions, data requests, account deletion assistance
+            or questions about this Policy, contact:
+          </p>
 
-        <section id="contact" class="legal-section">
-          <h2>Contact Us</h2>
-          <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
           <div class="legal-contact-card">
-            <div>
-              <strong>RepForge AI Inc.</strong><br>
-              Privacy Team<br>
-              <a href="mailto:privacy@repforge.ai">privacy@repforge.ai</a>
-            </div>
-            <div>
-              <strong>EU Representative</strong><br>
-              RepForge AI GmbH<br>
-              Berlin, Germany<br>
-              <a href="mailto:eu-privacy@repforge.ai">eu-privacy@repforge.ai</a>
-            </div>
+            <span>REPFORGE AI</span>
+            <strong>Privacy & Support</strong>
+            <a href="mailto:repforgeaisupport@gmail.com">
+              repforgeaisupport@gmail.com
+            </a>
           </div>
         </section>
-
-      </article>
+</article>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__bottom" style="border-top:none;padding-top:0">
-        <p class="footer__copy">© 2025 RepForge AI Inc. All rights reserved.</p>
-        <div class="footer__legal">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="#">Cookies</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
   <script src="../js/nav.js" defer></script>
-  <script src="../js/legal.js" defer></script>
 </body>
 </html>
+'@ | Set-Content .\pages\privacy.html -Encoding UTF8

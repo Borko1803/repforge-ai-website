@@ -5,11 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="RepForge AI connects training plans, workout execution, progression, recovery, analytics and community into one intelligent training system." />
   <title>RepForge AI — Know What to Do Next</title>
+  <meta name="theme-color" content="#080d0f" />
+
+  <link rel="canonical" href="https://repforgeai.pages.dev/" />
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RepForge AI" />
+  <meta property="og:title" content="RepForge AI — Know What to Do Next" />
+  <meta property="og:description" content="RepForge AI connects training plans, workout execution, progression, recovery, analytics and community into one intelligent training system." />
+  <meta property="og:url" content="https://repforgeai.pages.dev/" />
+  <meta property="og:image" content="https://repforgeai.pages.dev/assets/images/repforge-social-icon.png" />
+  <meta property="og:image:alt" content="RepForge AI" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="RepForge AI — Know What to Do Next" />
+  <meta name="twitter:description" content="RepForge AI connects training plans, workout execution, progression, recovery, analytics and community into one intelligent training system." />
+  <meta name="twitter:image" content="https://repforgeai.pages.dev/assets/images/repforge-social-icon.png" />
+
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/mobile-accessibility.css" />
 </head>
 <body>
 
@@ -318,11 +339,11 @@
 
           <div class="visual-ai-home__figures">
             <figure>
-              <img src="assets/images/visual-ai-front-transparent.png" alt="Front anatomical muscle recovery map" />
+              <img src="assets/images/visual-ai-front-transparent.png" alt="Front anatomical muscle recovery map" loading="lazy" decoding="async" />
               <figcaption>FRONT</figcaption>
             </figure>
             <figure>
-              <img src="assets/images/visual-ai-back-transparent.png" alt="Back anatomical muscle recovery map" />
+              <img src="assets/images/visual-ai-back-transparent.png" alt="Back anatomical muscle recovery map" loading="lazy" decoding="async" />
               <figcaption>BACK</figcaption>
             </figure>
           </div>
@@ -360,7 +381,7 @@
               <div class="mock-bar-wrap"><span class="mock-bar-label">Plan Fit</span><div class="mock-bar"><div class="mock-bar-fill" style="width:88%"></div></div><span class="mock-bar-pct">Built around your setup</span></div>
             </div>
           </div></div>
-          <div class="showcase-card__copy"><span class="eyebrow">Complete AI-Generated Weeks</span><h3>A real week, not a generic workout template</h3><p>RepForge generates training days, rest days, exercises, exact set counts, rep ranges and RIR targets while checking the week as one structure. Muscle Focus, Protected Areas, equipment and exercise preferences can shape the result.</p><a href="pages/features.html#programming" class="link-arrow">Explore program generation →</a></div>
+          <div class="showcase-card__copy"><span class="eyebrow">Complete AI-Generated Weeks</span><h3>A real week, not a generic workout template</h3><p>RepForge generates training days, rest days, exercises, exact set counts, rep ranges and RIR targets while checking the week as one structure. Muscle Focus, Protected Areas, equipment and exercise preferences can shape the result.</p><a href="pages/features.html#plan" class="link-arrow">Explore program generation →</a></div>
         </article>
 
         <article class="showcase-card showcase-card--reverse" role="listitem">
@@ -368,7 +389,7 @@
             <div class="mock-screen__header"><span class="mock-dot mock-dot--green"></span><span class="mock-title">Active Workout</span><span class="mock-badge">Live Set Coach</span></div>
             <div class="mock-chat"><div class="mock-msg mock-msg--ai"><p><strong>Target</strong><br />100 kg · 8–10 reps · RIR 2</p></div><div class="mock-msg mock-msg--user"><p>Set complete · 100 kg × 10 · RIR 2</p></div><div class="mock-msg mock-msg--ai"><p>The active target stays connected to the session while execution guidance responds to what you perform.</p></div></div>
           </div></div>
-          <div class="showcase-card__copy"><span class="eyebrow">Train With Guidance</span><h3>Useful while you are actually under the bar</h3><p>Track load, reps, sets and RIR. Use Live Set Coach, Exercise Swap, Exercise Setup, warm-up support, rest guidance and the plate calculator without disconnecting the workout from the target you started with.</p><a href="pages/features.html#active-workout" class="link-arrow">Explore active workout tools →</a></div>
+          <div class="showcase-card__copy"><span class="eyebrow">Train With Guidance</span><h3>Useful while you are actually under the bar</h3><p>Track load, reps, sets and RIR. Use Live Set Coach, Exercise Swap, Exercise Setup, warm-up support, rest guidance and the plate calculator without disconnecting the workout from the target you started with.</p><a href="pages/features.html#train" class="link-arrow">Explore active workout tools →</a></div>
         </article>
 
         <article class="showcase-card" role="listitem">
@@ -383,7 +404,7 @@
       </div></div>
     </section>
 
-    <section class="science section" id="recovery">
+    <section class="science section" id="recovery-context">
       <div class="container"><div class="science__grid">
         <div class="science__copy">
           <span class="eyebrow">Visual AI + Recovery</span>
@@ -395,7 +416,7 @@
             <li><span class="science__check">✦</span><span><strong>Progression Permission</strong> — Ready, Controlled, Blocked or Locked states</span></li>
             <li><span class="science__check">✦</span><span><strong>Recovery-aware guidance</strong> — a more conservative execution approach when current conditions call for it</span></li>
           </ul>
-          <a href="pages/features.html#recovery" class="btn btn--outline btn--md">Explore Visual AI</a>
+          <a href="pages/features.html#recover" class="btn btn--outline btn--md">Explore Visual AI</a>
         </div>
         <div class="science__visual" aria-hidden="true"><div class="muscle-map"><div class="mmap-label mmap-label--1">Chest<br /><span>Ready</span></div><div class="mmap-label mmap-label--2">Back<br /><span>Controlled</span></div><div class="mmap-label mmap-label--3">Shoulders<br /><span>Blocked</span></div><div class="mmap-ring mmap-ring--1"></div><div class="mmap-ring mmap-ring--2"></div><div class="mmap-ring mmap-ring--3"></div><div class="mmap-core"><span class="mmap-core-label">Visual<br />AI</span></div></div></div>
       </div></div>
@@ -467,10 +488,27 @@
 
     <section class="final-cta section" id="final-cta">
       <div class="container"><div class="final-cta__inner">
-        <h2 class="final-cta__headline">Train With a System<br />That Remembers What Happened.</h2>
-        <p class="final-cta__sub">Plan the week. Train the session. Understand the result. Know what comes next.</p>
-        <a href="pages/features.html" class="btn btn--primary btn--xl btn--forge"><span class="btn__text">Explore RepForge Features</span><span class="btn__icon">→</span></a>
-        <p class="final-cta__small">RepForge AI provides fitness and strength-training guidance. It is not a medical device and does not provide medical diagnosis or treatment.</p>
+        <span class="eyebrow">Full RepForge · 21 Days</span>
+        <h2 class="final-cta__headline">Experience the Whole System.<br />Then Decide If Pro Is Worth It.</h2>
+        <p class="final-cta__sub">
+          Start with the complete RepForge experience. As your training history builds,
+          progression, recovery, analytics and prediction become more meaningful —
+          before you decide whether to continue with Pro.
+        </p>
+        <div class="hero__proof" aria-label="21 day RepForge trial">
+          <div class="proof-item"><span class="proof-num">DAY 1</span><span class="proof-label">Full system unlocked</span></div>
+          <div class="proof-divider"></div>
+          <div class="proof-item"><span class="proof-num">21 DAYS</span><span class="proof-label">Build real training history</span></div>
+          <div class="proof-divider"></div>
+          <div class="proof-item"><span class="proof-num">THEN</span><span class="proof-label">Choose Free or Pro</span></div>
+        </div>
+        <span class="btn btn--primary btn--xl btn--forge" aria-disabled="true">
+          <span class="btn__text">Coming to Google Play</span>
+        </span>
+        <p class="final-cta__small">
+          No purchase is available on this website yet. Launch availability and final Pro pricing will be announced with the Android release.
+          RepForge AI provides fitness and strength-training guidance. It is not a medical device and does not provide medical diagnosis or treatment.
+        </p>
       </div></div>
     </section>
   </main>
@@ -479,16 +517,14 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand"><a href="index.html" class="nav-logo" aria-label="RepForge AI Home"><span class="logo-icon">⬡</span><span class="logo-text">RepForge <em>AI</em></span></a><p class="footer__tagline">Planning, execution, progression and recovery — connected.</p></div>
-        <nav class="footer__col" aria-label="Product links"><h3 class="footer__col-title">Product</h3><ul role="list"><li><a href="pages/features.html">Features</a></li><li><a href="pages/training-system.html">Training System</a></li><li><a href="#recovery">Visual AI & Recovery</a></li><li><a href="pages/community.html">Community</a></li></ul></nav>
-        <nav class="footer__col" aria-label="Support links"><h3 class="footer__col-title">Support</h3><ul role="list"><li><a href="mailto:repforgeaisupport@gmail.com">Contact Support</a></li><li><a href="https://borko1803.github.io/repforge-public/delete-account.html">Delete Account</a></li></ul></nav>
-        <nav class="footer__col" aria-label="Legal links"><h3 class="footer__col-title">Legal</h3><ul role="list"><li><a href="pages/privacy.html">Privacy Policy</a></li><li><a href="pages/terms.html">Terms of Service</a></li><li><a href="https://borko1803.github.io/repforge-public/delete-account.html">Account Deletion</a></li></ul></nav>
+        <nav class="footer__col" aria-label="Product links"><h3 class="footer__col-title">Product</h3><ul role="list"><li><a href="pages/features.html">All Features</a></li><li><a href="pages/training-system.html">Training System</a></li><li><a href="pages/recovery.html">Visual AI & Recovery</a></li><li><a href="pages/community.html">Community</a></li></ul></nav>
+        <nav class="footer__col" aria-label="Support links"><h3 class="footer__col-title">Support</h3><ul role="list"><li><a href="pages/support.html">Contact Support</a></li></ul></nav>
+        <nav class="footer__col" aria-label="Legal links"><h3 class="footer__col-title">Legal</h3><ul role="list"><li><a href="pages/privacy.html">Privacy Policy</a></li><li><a href="pages/terms.html">Terms of Service</a></li><li><a href="pages/community-guidelines.html">Community Guidelines</a></li><li><a href="pages/delete-account.html">Delete Account</a></li></ul></nav>
       </div>
-      <div class="footer__bottom"><p class="footer__copy">© 2026 RepForge AI. All rights reserved.</p><div class="footer__legal"><a href="pages/privacy.html">Privacy Policy</a><a href="pages/terms.html">Terms of Service</a><a href="mailto:repforgeaisupport@gmail.com">Support</a></div></div>
+      <div class="footer__bottom"><p class="footer__copy">© 2026 RepForge AI. All rights reserved.</p><div class="footer__legal"><a href="pages/privacy.html">Privacy Policy</a><a href="pages/terms.html">Terms of Service</a><a href="pages/support.html">Support</a></div></div>
     </div>
   </footer>
 
   <script src="js/nav.js" defer></script>
-  <script src="js/counter.js" defer></script>
-  <script src="js/scroll-reveal.js" defer></script>
 </body>
 </html>

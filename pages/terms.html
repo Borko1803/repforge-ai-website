@@ -3,228 +3,710 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RepForge AI Terms of Service." />
+  <meta name="description" content="Read the RepForge AI Terms of Service for accounts, training features, Community use, user content, moderation and acceptable use." />
   <title>Terms of Service — RepForge AI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="theme-color" content="#080d0f" />
+
+  <link rel="canonical" href="https://repforgeai.pages.dev/pages/terms.html" />
+  <link rel="icon" href="../assets/images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RepForge AI" />
+  <meta property="og:title" content="Terms of Service — RepForge AI" />
+  <meta property="og:description" content="Read the RepForge AI Terms of Service for accounts, training features, Community use, user content, moderation and acceptable use." />
+  <meta property="og:url" content="https://repforgeai.pages.dev/pages/terms.html" />
+  <meta property="og:image" content="https://repforgeai.pages.dev/assets/images/repforge-social-icon.png" />
+  <meta property="og:image:alt" content="RepForge AI" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Terms of Service — RepForge AI" />
+  <meta name="twitter:description" content="Read the RepForge AI Terms of Service for accounts, training features, Community use, user content, moderation and acceptable use." />
+  <meta name="twitter:image" content="https://repforgeai.pages.dev/assets/images/repforge-social-icon.png" />
+
+
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/tokens.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/layout.css" />
-  <link rel="stylesheet" href="../css/pages/legal.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/mobile-accessibility.css" />
 </head>
-<body>
 
+<body>
   <header class="nav-wrapper" id="nav">
     <nav class="nav-inner container">
-      <a href="../index.html" class="nav-logo">
-        <span class="logo-icon">⬡</span>
-        <span class="logo-text">RepForge <em>AI</em></span>
+      <a
+        href="../index.html"
+        class="nav-logo nav-logo--brand"
+        aria-label="RepForge AI Home"
+      >
+        <img
+          src="../assets/images/repforge-anvil-transparent.png"
+          alt=""
+          class="nav-logo__anvil"
+          aria-hidden="true"
+        />
+        <span class="logo-text">RepForge <span>AI</span></span>
       </a>
+
       <ul class="nav-links" role="list">
-        <li><a href="../index.html#how-it-works" class="nav-link">How It Works</a></li>
-        <li><a href="features.html" class="nav-link">Features</a></li>
-        <li><a href="science.html" class="nav-link">The Science</a></li>
-        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-        <li><a href="athletes.html" class="nav-link">Athletes</a></li>
+        <li><a href="training-system.html" class="nav-link">Training System</a></li>
+        <li><a href="performance.html" class="nav-link">Performance</a></li>
+        <li><a href="recovery.html" class="nav-link">Recovery</a></li>
+        <li><a href="community.html" class="nav-link">Community</a></li>
+        <li><a href="features.html" class="nav-link">All Features</a></li>
       </ul>
+
       <div class="nav-actions">
-        <a href="login.html" class="btn btn--ghost btn--sm">Log in</a>
-        <a href="signup.html" class="btn btn--primary btn--sm">Start Free</a>
+        <a href="../index.html" class="btn btn--primary btn--sm">Back Home</a>
       </div>
-      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false" id="navBurger">
-        <span></span><span></span><span></span>
+
+      <button
+        class="nav-burger"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        id="navBurger"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </nav>
+
     <div class="nav-progress" id="navProgress" aria-hidden="true"></div>
   </header>
-  <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true">
-    <button class="mobile-nav__close" id="mobileNavClose">✕</button>
+
+  <div
+    class="mobile-nav"
+    id="mobileNav"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Navigation"
+  >
+    <button
+      class="mobile-nav__close"
+      id="mobileNavClose"
+      aria-label="Close menu"
+    >
+      ✕
+    </button>
+
     <ul role="list">
-      <li><a href="../index.html#how-it-works">How It Works</a></li>
-      <li><a href="features.html">Features</a></li>
-      <li><a href="science.html">The Science</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="athletes.html">Athletes</a></li>
+      <li><a href="training-system.html">Training System</a></li>
+      <li><a href="performance.html">Performance</a></li>
+      <li><a href="recovery.html">Recovery</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="features.html">All Features</a></li>
     </ul>
+
     <div class="mobile-nav__cta">
-      <a href="login.html" class="btn btn--ghost btn--full">Log in</a>
-      <a href="signup.html" class="btn btn--primary btn--full">Start Free</a>
+      <a href="../index.html" class="btn btn--primary btn--full">Back Home</a>
     </div>
   </div>
+
   <div class="overlay" id="overlay"></div>
 
-  <main>
-    <div class="legal-layout">
+  <main class="legal-page">
+    <section class="legal-hero">
+      <div class="container legal-hero__inner">
+        <span class="eyebrow">Legal · Terms</span>
 
-      <aside class="legal-toc" aria-label="Table of contents">
-        <p class="legal-toc__title">Contents</p>
-        <nav>
-          <ul role="list">
-            <li><a href="#acceptance" class="toc-link">Acceptance</a></li>
-            <li><a href="#account" class="toc-link">Your Account</a></li>
-            <li><a href="#service" class="toc-link">The Service</a></li>
-            <li><a href="#subscriptions" class="toc-link">Subscriptions & Billing</a></li>
-            <li><a href="#content" class="toc-link">Your Content</a></li>
-            <li><a href="#prohibited" class="toc-link">Prohibited Uses</a></li>
-            <li><a href="#ip" class="toc-link">Intellectual Property</a></li>
-            <li><a href="#disclaimer" class="toc-link">Disclaimers</a></li>
-            <li><a href="#liability" class="toc-link">Limitation of Liability</a></li>
-            <li><a href="#termination" class="toc-link">Termination</a></li>
-            <li><a href="#governing" class="toc-link">Governing Law</a></li>
-            <li><a href="#contact" class="toc-link">Contact</a></li>
-          </ul>
-        </nav>
+        <h1>
+          Terms of<br />
+          <span>Service.</span>
+        </h1>
+
+        <p class="legal-hero__lead">
+          These Terms govern your use of RepForge AI, including account-backed
+          training features, cloud workout services and RepForge Community.
+          Please read them before using the service.
+        </p>
+
+        <div class="legal-hero__meta">
+          <span>Effective: August 31, 2026</span>
+          <span>RepForge AI</span>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=repforgeaisupport@gmail.com&su=RepForge%20AI%20Terms%20question"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            repforgeaisupport@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container legal-layout">
+      <aside class="legal-toc">
+        <span>CONTENTS</span>
+        <a href="#agreement">1. Agreement</a>
+        <a href="#service">2. The service</a>
+        <a href="#eligibility">3. Eligibility</a>
+        <a href="#accounts">4. Accounts</a>
+        <a href="#fitness">5. Fitness guidance</a>
+        <a href="#training-data">6. Training data</a>
+        <a href="#community">7. Community & UGC</a>
+        <a href="#content-rights">8. Your content</a>
+        <a href="#acceptable-use">9. Acceptable use</a>
+        <a href="#moderation">10. Moderation</a>
+        <a href="#third-parties">11. Third-party services</a>
+        <a href="#availability">12. Availability & changes</a>
+        <a href="#termination">13. Suspension & termination</a>
+        <a href="#deletion">14. Account deletion</a>
+        <a href="#disclaimers">15. Disclaimers</a>
+        <a href="#liability">16. Liability</a>
+        <a href="#indemnity">17. Responsibility for misuse</a>
+        <a href="#law">18. Applicable law</a>
+        <a href="#changes">19. Changes to Terms</a>
+        <a href="#contact">20. Contact</a>
       </aside>
 
       <article class="legal-content">
-        <div class="legal-header">
-          <span class="eyebrow">Legal</span>
-          <h1 class="legal-title">Terms of Service</h1>
-          <p class="legal-meta">Last updated: <time datetime="2025-06-01">June 1, 2025</time> · Effective: June 1, 2025</p>
-        </div>
+        <section id="agreement">
+          <span class="legal-section-number">01</span>
+          <h2>Agreement to these Terms</h2>
 
-        <section id="acceptance" class="legal-section">
-          <h2>Acceptance of Terms</h2>
-          <p>These Terms of Service ("Terms") govern your access to and use of the RepForge AI application, website at repforge.ai, and all related services (collectively, the "Service") provided by RepForge AI Inc. ("RepForge," "we," "our," or "us").</p>
-          <p>By creating an account or using the Service, you confirm that you are at least 16 years of age, have read and understood these Terms, and agree to be bound by them. If you do not agree, do not use the Service.</p>
-          <div class="legal-highlight">
-            <strong>Important health notice:</strong> RepForge AI provides training guidance for informational and educational purposes. It is not a substitute for professional medical advice. Consult a qualified healthcare professional before beginning any exercise program, especially if you have pre-existing health conditions or injuries.
-          </div>
+          <p>
+            These Terms of Service (“Terms”) govern your access to and use of
+            RepForge AI, including the mobile application, associated account
+            services, cloud workout functionality, Community features and
+            related public web resources.
+          </p>
+
+          <p>
+            By creating an account, accepting these Terms where prompted, or
+            using account-backed RepForge features, you agree to these Terms.
+            If you do not agree, do not use those features.
+          </p>
+
+          <p>
+            RepForge Community users must also follow the
+            <a href="community-guidelines.html">Community Guidelines</a>.
+            Our handling of personal information is described in the
+            <a href="privacy.html">Privacy Policy</a>.
+          </p>
         </section>
 
-        <section id="account" class="legal-section">
-          <h2>Your Account</h2>
-          <p>To access most features of the Service, you must create an account. You agree to:</p>
+        <section id="service">
+          <span class="legal-section-number">02</span>
+          <h2>What RepForge AI provides</h2>
+
+          <p>
+            RepForge AI is a fitness and strength-training application designed
+            to help users plan, record, review and understand training.
+          </p>
+
+          <p>
+            Depending on the current version and available account features,
+            RepForge may provide functionality such as:
+          </p>
+
           <ul>
-            <li>Provide accurate, current, and complete information during registration</li>
-            <li>Maintain and promptly update your account information</li>
-            <li>Keep your password confidential and not share it with others</li>
-            <li>Notify us immediately at <a href="mailto:security@repforge.ai">security@repforge.ai</a> of any unauthorized use of your account</li>
-            <li>Accept responsibility for all activity that occurs under your account</li>
+            <li>workout and exercise logging;</li>
+            <li>set, repetition, load and RIR tracking;</li>
+            <li>weekly training-plan generation;</li>
+            <li>training targets and progression guidance;</li>
+            <li>session-level execution guidance;</li>
+            <li>performance history and analytics;</li>
+            <li>readiness, fatigue and recovery-related training presentation;</li>
+            <li>session and monthly review features;</li>
+            <li>local nutrition logging;</li>
+            <li>public Community profiles and training posts;</li>
+            <li>Community images, Kudos, notifications, reporting and blocking;</li>
+            <li>cloud synchronization of supported workout data.</li>
           </ul>
-          <p>You may not create more than one free Starter account. Accounts created to abuse free trial offers may be terminated without notice.</p>
+
+          <p>
+            Features may evolve over time and may differ by platform, account
+            state, product version or release configuration.
+          </p>
         </section>
 
-        <section id="service" class="legal-section">
-          <h2>The Service</h2>
-          <p>RepForge AI provides AI-powered training program generation, adaptive periodization, in-app coaching, analytics, and related fitness tools. The Service is provided "as is" and features may change over time. We reserve the right to modify, suspend, or discontinue any feature with reasonable notice.</p>
+        <section id="eligibility">
+          <span class="legal-section-number">03</span>
+          <h2>Eligibility and responsible use</h2>
 
-          <h3>AI-Generated Content</h3>
-          <p>Training programs, coaching advice, and recommendations generated by our AI are based on exercise science principles and your logged data. They are educational in nature. RepForge AI is not a licensed medical provider, personal trainer, or registered dietitian. Our AI-generated programs do not constitute medical advice, diagnosis, or treatment.</p>
+          <p>
+            You may use RepForge only where doing so is lawful and where you are
+            legally capable of agreeing to these Terms.
+          </p>
 
-          <h3>Availability</h3>
-          <p>We target 99.9% monthly uptime for paid plans. Scheduled maintenance will be announced at least 24 hours in advance via our status page at status.repforge.ai. We are not liable for downtime caused by factors outside our reasonable control.</p>
+          <p>
+            If applicable law requires parental or guardian authorization for
+            you to use a service that processes personal information, you may
+            use RepForge only with that authorization.
+          </p>
+
+          <p>
+            RepForge is not designed as a child-directed service.
+          </p>
         </section>
 
-        <section id="subscriptions" class="legal-section">
-          <h2>Subscriptions & Billing</h2>
+        <section id="accounts">
+          <span class="legal-section-number">04</span>
+          <h2>Accounts and account security</h2>
 
-          <h3>Free Trial</h3>
-          <p>Paid plans include a 14-day free trial. Your payment method will not be charged until the trial ends. You may cancel at any time during the trial without charge.</p>
+          <p>
+            Some RepForge functionality requires an authenticated account.
+            RepForge currently supports Google Sign-In through Firebase
+            Authentication.
+          </p>
 
-          <h3>Subscription Plans</h3>
-          <p>Paid subscriptions (Forge at $19/month, Elite at $49/month, or equivalent annual rates) are billed in advance on a recurring basis. By subscribing, you authorize RepForge to charge your payment method on each billing date.</p>
+          <p>
+            You are responsible for maintaining control of the Google account,
+            device and authentication environment you use to access RepForge.
+          </p>
 
-          <h3>Cancellation</h3>
-          <p>You may cancel your subscription at any time from Account Settings → Billing. Cancellation takes effect at the end of your current billing period. We do not provide refunds for partial subscription periods, except where required by applicable law.</p>
+          <p>You must not:</p>
 
-          <h3>Price Changes</h3>
-          <p>We may change subscription prices with 30 days' prior notice. If you disagree with a price change, you may cancel before the new price takes effect. Continuing to use the Service after a price change constitutes acceptance of the new price.</p>
-
-          <h3>Refund Policy</h3>
-          <p>If you experience a significant service outage or a billing error, contact <a href="mailto:billing@repforge.ai">billing@repforge.ai</a> and we will review your case and issue a credit or refund where appropriate.</p>
-        </section>
-
-        <section id="content" class="legal-section">
-          <h2>Your Content</h2>
-          <p>You retain ownership of all data and content you submit to the Service ("Your Content"), including workout logs, notes, photos, and measurements.</p>
-          <p>By submitting Your Content, you grant RepForge a limited, non-exclusive, worldwide, royalty-free license to use, store, process, and display Your Content solely to operate and improve the Service for you. This license terminates when you delete Your Content or close your account.</p>
-          <p>You may export all Your Content at any time from Account Settings → Export Data in JSON or CSV format.</p>
-        </section>
-
-        <section id="prohibited" class="legal-section">
-          <h2>Prohibited Uses</h2>
-          <p>You agree not to:</p>
           <ul>
-            <li>Use the Service for any unlawful purpose or in violation of any applicable regulations</li>
-            <li>Reverse engineer, decompile, or attempt to extract the source code of the Service</li>
-            <li>Scrape, crawl, or use automated tools to access the Service without our written permission</li>
-            <li>Use the Service to build a competing product</li>
-            <li>Share your account credentials or allow others to access the Service through your account</li>
-            <li>Upload malicious code, viruses, or any disruptive software</li>
-            <li>Attempt to gain unauthorized access to other users' accounts or our systems</li>
-            <li>Misrepresent your identity or impersonate any person or entity</li>
+            <li>attempt to access another user's account without authorization;</li>
+            <li>misrepresent account ownership;</li>
+            <li>circumvent authentication or security controls;</li>
+            <li>use another person's account to evade enforcement or a block;</li>
+            <li>interfere with account-scoped cloud-data protections.</li>
           </ul>
-          <p>Violation of these prohibitions may result in immediate account termination and, where appropriate, legal action.</p>
+
+          <p>
+            Contact RepForge Support promptly if you believe your account or
+            RepForge access has been compromised.
+          </p>
         </section>
 
-        <section id="ip" class="legal-section">
-          <h2>Intellectual Property</h2>
-          <p>The Service, including its software, design, branding, AI models, algorithms, text, graphics, and all other content created by RepForge, is owned by RepForge AI Inc. and is protected by copyright, trademark, and other intellectual property laws.</p>
-          <p>You are granted a limited, non-exclusive, non-transferable license to use the Service for your personal fitness use as permitted by these Terms. This license does not include any right to reproduce, distribute, create derivative works from, publicly display, or commercially exploit any RepForge intellectual property.</p>
+        <section id="fitness">
+          <span class="legal-section-number">05</span>
+          <h2>Fitness guidance, health and medical disclaimer</h2>
+
+          <p>
+            RepForge AI provides fitness and strength-training guidance based
+            on training information available to the product.
+          </p>
+
+          <p>
+            <strong>
+              RepForge AI is not a medical device and does not diagnose, treat,
+              cure or prevent any medical condition.
+            </strong>
+          </p>
+
+          <p>
+            RepForge is not a substitute for professional medical advice,
+            diagnosis, treatment, rehabilitation or emergency care.
+          </p>
+
+          <p>
+            Exercise involves risk of injury. You are responsible for deciding
+            whether an exercise, load, movement, training session or training
+            plan is appropriate for you.
+          </p>
+
+          <p>
+            Stop training and seek appropriate medical attention if you
+            experience symptoms or circumstances that require medical care.
+            Consult a qualified healthcare professional when you have a medical
+            condition, injury, relevant health concern or uncertainty about
+            your ability to exercise safely.
+          </p>
+
+          <p>
+            Training suggestions, readiness states, fatigue signals, recovery
+            presentation and progression decisions are fitness-oriented product
+            outputs and should not be interpreted as clinical findings.
+          </p>
         </section>
 
-        <section id="disclaimer" class="legal-section">
-          <h2>Disclaimers</h2>
-          <p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
-          <p>REPFORGE DOES NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS. REPFORGE DOES NOT WARRANT THAT THE TRAINING PROGRAMS OR COACHING ADVICE PROVIDED WILL ACHIEVE ANY PARTICULAR FITNESS RESULT.</p>
-          <p>Exercise carries inherent risks. You assume all risk associated with your use of any training program generated by the Service.</p>
+        <section id="training-data">
+          <span class="legal-section-number">06</span>
+          <h2>Your training information and generated outputs</h2>
+
+          <p>
+            RepForge relies on information you enter, save or generate through
+            your training activity. The quality and relevance of product
+            outputs may depend on the accuracy, completeness and amount of that
+            information.
+          </p>
+
+          <p>
+            You are responsible for reviewing generated programs, exercise
+            choices, loads, repetition targets and other training suggestions
+            before acting on them.
+          </p>
+
+          <p>
+            RepForge may change a training recommendation when new session
+            information, history or recovery context becomes available.
+            Generated outputs are not guarantees of future performance,
+            strength gains, muscle growth, injury prevention or any specific
+            result.
+          </p>
+
+          <p>
+            Nutrition information entered into the current local nutrition
+            feature does not currently drive RepForge AI readiness, recovery,
+            fatigue, progression or workout-target decisions.
+          </p>
         </section>
 
-        <section id="liability" class="legal-section">
-          <h2>Limitation of Liability</h2>
-          <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, REPFORGE AI INC. AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF DATA, PERSONAL INJURY, OR PROPERTY DAMAGE ARISING FROM YOUR USE OF THE SERVICE.</p>
-          <p>IN NO EVENT SHALL REPFORGE'S TOTAL LIABILITY TO YOU EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID TO REPFORGE IN THE 12 MONTHS PRECEDING THE CLAIM, OR (B) $100 USD.</p>
-          <p>Some jurisdictions do not allow the exclusion of certain warranties or limitation of liability, so some of the above limitations may not apply to you.</p>
+        <section id="community">
+          <span class="legal-section-number">07</span>
+          <h2>Community and user-generated content</h2>
+
+          <p>
+            RepForge Community allows users to create or share user-generated
+            content (“UGC”), which may include public profile information,
+            workout posts, personal-record posts and training photos.
+          </p>
+
+          <p>
+            Before creating or uploading Community content, you may be required
+            to accept these Terms and/or the
+            <a href="community-guidelines.html">Community Guidelines</a>.
+          </p>
+
+          <p>
+            You must not create, upload or distribute objectionable or
+            prohibited content through RepForge Community. The Community
+            Guidelines form part of the rules governing Community use and
+            describe prohibited content and behavior in greater detail.
+          </p>
+
+          <p>
+            RepForge provides Community safety controls including reporting and
+            blocking functionality. Those controls must not be deliberately
+            abused to harass other users or submit knowingly false reports.
+          </p>
         </section>
 
-        <section id="termination" class="legal-section">
-          <h2>Termination</h2>
-          <p>You may terminate your account at any time from Account Settings → Close Account. Upon termination, your access to the Service will cease and your data will be deleted within 30 days per our Privacy Policy.</p>
-          <p>RepForge may suspend or terminate your account immediately if you violate these Terms, engage in fraudulent activity, or if we are required to do so by law. In cases of non-payment, we will provide at least 7 days' notice before suspension.</p>
-          <p>Upon termination for any reason, all licenses granted to you under these Terms will immediately terminate. Provisions that by their nature should survive termination (including limitation of liability, disclaimers, and governing law) shall survive.</p>
+        <section id="content-rights">
+          <span class="legal-section-number">08</span>
+          <h2>Your content and rights needed to operate Community</h2>
+
+          <p>
+            You retain ownership of content that you own and choose to publish
+            through RepForge Community.
+          </p>
+
+          <p>
+            By uploading or publishing content, you represent that you have the
+            rights and permissions necessary to share it.
+          </p>
+
+          <p>
+            You grant RepForge a non-exclusive, worldwide, royalty-free license
+            to host, store, process, reproduce, resize, display and transmit
+            that content only as reasonably necessary to operate, secure,
+            moderate and provide the Community feature in which you chose to
+            publish it.
+          </p>
+
+          <p>
+            This operational license does not transfer ownership of your
+            content to RepForge.
+          </p>
+
+          <p>
+            If you use your device's native sharing interface to send content
+            to another service, use of that destination is governed by the
+            destination's own terms and privacy practices.
+          </p>
         </section>
 
-        <section id="governing" class="legal-section">
-          <h2>Governing Law & Disputes</h2>
-          <p>These Terms are governed by the laws of the State of Delaware, United States, without regard to its conflict of law provisions.</p>
-          <p>For any dispute arising out of or relating to these Terms or the Service, we encourage you to first contact us at <a href="mailto:legal@repforge.ai">legal@repforge.ai</a> to seek an informal resolution. If we cannot resolve the dispute within 30 days, either party may initiate binding arbitration administered by the American Arbitration Association under its Commercial Arbitration Rules.</p>
-          <p>You waive any right to a jury trial or to participate in a class action lawsuit in connection with your use of the Service.</p>
-          <p>Notwithstanding the above, EU residents may bring claims before their local courts under applicable EU consumer protection law.</p>
+        <section id="acceptable-use">
+          <span class="legal-section-number">09</span>
+          <h2>Acceptable use</h2>
+
+          <p>
+            You may not use RepForge to violate law, harm other users, interfere
+            with the service or defeat product security.
+          </p>
+
+          <p>You must not:</p>
+
+          <ul>
+            <li>access or attempt to access data you are not authorized to access;</li>
+            <li>probe, attack, disable or circumvent security controls;</li>
+            <li>distribute malware, malicious code or deceptive links;</li>
+            <li>use automated systems to abuse Community or service resources;</li>
+            <li>attempt to manipulate Kudos, reports or Community activity deceptively;</li>
+            <li>scrape private or restricted user data without authorization;</li>
+            <li>use RepForge for unlawful fraud, harassment or exploitation;</li>
+            <li>reverse engineer or misuse the service where prohibited by law or these Terms;</li>
+            <li>use RepForge in a way that materially disrupts service for other users.</li>
+          </ul>
         </section>
 
-        <section id="contact" class="legal-section">
+        <section id="moderation">
+          <span class="legal-section-number">10</span>
+          <h2>Community moderation and enforcement</h2>
+
+          <p>
+            RepForge may review reported Community content or account behavior
+            when reasonably necessary to enforce these Terms, the Community
+            Guidelines, protect users, investigate abuse or comply with law.
+          </p>
+
+          <p>
+            Depending on the nature and severity of a violation, RepForge may
+            remove content, restrict Community access, warn a user, suspend
+            access, terminate an account or take other reasonable action.
+          </p>
+
+          <p>
+            A user report does not by itself establish that a violation
+            occurred. Moderation decisions may consider context, severity,
+            repeat behavior and relevant safety information.
+          </p>
+
+          <p>
+            Certain moderation or safety records may be retained after content
+            or an account is removed where reasonably necessary for abuse
+            prevention, dispute handling, security or legal obligations.
+          </p>
+        </section>
+
+        <section id="third-parties">
+          <span class="legal-section-number">11</span>
+          <h2>Third-party services</h2>
+
+          <p>
+            RepForge relies on third-party infrastructure to provide certain
+            functionality. Current service providers include Google/Firebase,
+            ImageKit and Cloudflare.
+          </p>
+
+          <p>
+            Your use of third-party account, device or sharing services may
+            also be subject to their own terms and policies.
+          </p>
+
+          <p>
+            RepForge is not responsible for services, websites or applications
+            operated independently by third parties.
+          </p>
+
+          <p>
+            More information about relevant data handling is available in the
+            <a href="privacy.html">Privacy Policy</a>.
+          </p>
+        </section>
+
+        <section id="availability">
+          <span class="legal-section-number">12</span>
+          <h2>Service availability and product changes</h2>
+
+          <p>
+            We aim to provide a reliable service, but RepForge may occasionally
+            be unavailable because of maintenance, network conditions,
+            third-party outages, technical problems or product changes.
+          </p>
+
+          <p>
+            We may add, change, improve, replace or discontinue product
+            functionality as RepForge evolves.
+          </p>
+
+          <p>
+            We do not guarantee that every feature, generated output, cloud
+            service or Community capability will always be available without
+            interruption.
+          </p>
+        </section>
+
+        <section id="termination">
+          <span class="legal-section-number">13</span>
+          <h2>Suspension and termination</h2>
+
+          <p>
+            You may stop using RepForge at any time.
+          </p>
+
+          <p>
+            RepForge may restrict, suspend or terminate access where reasonably
+            necessary because of serious or repeated violations of these Terms,
+            the Community Guidelines, security abuse, unlawful activity or
+            risks to users or the service.
+          </p>
+
+          <p>
+            Where appropriate, enforcement may be limited to Community
+            functionality rather than the entire account.
+          </p>
+
+          <p>
+            Nothing in this section prevents immediate action where necessary
+            to address serious safety, security or legal concerns.
+          </p>
+        </section>
+
+        <section id="deletion">
+          <span class="legal-section-number">14</span>
+          <h2>Account deletion</h2>
+
+          <p>
+            RepForge provides an in-app account deletion flow and an external
+            web resource for users who cannot access the app.
+          </p>
+
+          <p>
+            Account deletion is permanent and is not equivalent to signing out
+            or disabling the app.
+          </p>
+
+          <p>
+            The data covered by deletion, as well as limited categories that
+            may need to be retained for safety, moderation, security or legal
+            purposes, are described in the
+            <a href="delete-account.html">Delete Account</a>
+            resource and
+            <a href="privacy.html">Privacy Policy</a>.
+          </p>
+        </section>
+
+        <section id="disclaimers">
+          <span class="legal-section-number">15</span>
+          <h2>Service disclaimers</h2>
+
+          <p>
+            To the maximum extent permitted by applicable law, RepForge is
+            provided on an “as is” and “as available” basis.
+          </p>
+
+          <p>
+            We do not guarantee that:
+          </p>
+
+          <ul>
+            <li>training recommendations will produce a particular result;</li>
+            <li>all generated plans or targets will be appropriate for every user;</li>
+            <li>all information will always be complete or error-free;</li>
+            <li>the service will always be uninterrupted or available;</li>
+            <li>use of RepForge will prevent injury;</li>
+            <li>recovery or readiness presentation reflects a medical condition.</li>
+          </ul>
+
+          <p>
+            You remain responsible for judgment about your own training and
+            safety.
+          </p>
+        </section>
+
+        <section id="liability">
+          <span class="legal-section-number">16</span>
+          <h2>Limitation of liability</h2>
+
+          <p>
+            To the maximum extent permitted by applicable law, RepForge and its
+            operator will not be liable for indirect, incidental, special,
+            consequential or punitive damages arising from or related to use of
+            the service.
+          </p>
+
+          <p>
+            This includes, where legally permitted, losses arising from
+            training decisions, inability to access the service, loss of data,
+            third-party service failures or user-generated content.
+          </p>
+
+          <p>
+            Nothing in these Terms excludes or limits liability that cannot
+            legally be excluded or limited.
+          </p>
+        </section>
+
+        <section id="indemnity">
+          <span class="legal-section-number">17</span>
+          <h2>Responsibility for your misuse</h2>
+
+          <p>
+            You are responsible for content you publish and for your use of
+            RepForge.
+          </p>
+
+          <p>
+            Where permitted by applicable law, you agree to be responsible for
+            losses, claims or costs resulting from your unlawful use of
+            RepForge, your infringement of another person's rights, or content
+            you publish in violation of these Terms.
+          </p>
+        </section>
+
+        <section id="law">
+          <span class="legal-section-number">18</span>
+          <h2>Applicable law and mandatory rights</h2>
+
+          <p>
+            These Terms do not remove consumer or other legal rights that
+            cannot be waived under applicable law.
+          </p>
+
+          <p>
+            Any dispute relating to RepForge will be handled under applicable
+            law and by courts or authorities that have lawful jurisdiction.
+          </p>
+
+          <p>
+            Additional operator, jurisdiction or governing-law information
+            will be provided where required by applicable law and the final
+            distribution setup.
+          </p>
+        </section>
+
+        <section id="changes">
+          <span class="legal-section-number">19</span>
+          <h2>Changes to these Terms</h2>
+
+          <p>
+            We may update these Terms when the product, Community rules,
+            service providers or applicable requirements change.
+          </p>
+
+          <p>
+            The current version will be published at the RepForge Terms of
+            Service URL with its effective date.
+          </p>
+
+          <p>
+            Where a material change requires renewed acceptance in the product,
+            RepForge may present the updated Terms for acceptance before
+            affected functionality can be used.
+          </p>
+        </section>
+
+        <section id="contact">
+          <span class="legal-section-number">20</span>
           <h2>Contact</h2>
-          <p>For questions about these Terms, please contact:</p>
-          <div class="legal-contact-card">
-            <div>
-              <strong>RepForge AI Inc.</strong><br>
-              Legal Department<br>
-              <a href="mailto:legal@repforge.ai">legal@repforge.ai</a>
-            </div>
-          </div>
-        </section>
 
-      </article>
+          <p>
+            For questions about these Terms, account access, Community
+            enforcement or related support matters, contact RepForge AI:
+          </p>
+
+          <div class="legal-contact-card">
+            <span>REPFORGE AI</span>
+            <strong>Terms & Support</strong>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=repforgeaisupport@gmail.com&su=RepForge%20AI%20Terms%20question"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              repforgeaisupport@gmail.com
+            </a>
+          </div>
+
+          <p>
+            Related documents:
+            <a href="privacy.html">Privacy Policy</a>,
+            <a href="community-guidelines.html">Community Guidelines</a>
+            and
+            <a href="delete-account.html">Delete Account</a>.
+          </p>
+        </section>
+</article>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__bottom" style="border-top:none;padding-top:0">
-        <p class="footer__copy">© 2025 RepForge AI Inc. All rights reserved.</p>
-        <div class="footer__legal">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="#">Cookies</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
   <script src="../js/nav.js" defer></script>
-  <script src="../js/legal.js" defer></script>
 </body>
 </html>

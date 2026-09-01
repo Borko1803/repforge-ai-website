@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn how to permanently delete your RepForge AI account and associated account data in the app or through the external deletion request path." />
+  <title>Delete Account — RepForge AI</title>
+  <meta name="theme-color" content="#080d0f" />
+
+  <link rel="canonical" href="https://repforgeai.pages.dev/pages/delete-account.html" />
+  <link rel="icon" href="../assets/images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RepForge AI" />
+  <meta property="og:title" content="Delete Account — RepForge AI" />
+  <meta property="og:description" content="Learn how to permanently delete your RepForge AI account and associated account data in the app or through the external deletion request path." />
+  <meta property="og:url" content="https://repforgeai.pages.dev/pages/delete-account.html" />
+  <meta property="og:image" content="https://repforgeai.pages.dev/assets/images/repforge-social-icon.png" />
+  <meta property="og:image:alt" content="RepForge AI" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Delete Account — RepForge AI" />
+  <meta name="twitter:description" content="Learn how to permanently delete your RepForge AI account and associated account data in the app or through the external deletion request path." />
+  <meta name="twitter:image" content="https://repforgeai.pages.dev/assets/images/repforge-social-icon.png" />
+
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/mobile-accessibility.css" />
+</head>
+
+<body>
+  <header class="nav-wrapper" id="nav">
+    <nav class="nav-inner container">
+      <a
+        href="../index.html"
+        class="nav-logo nav-logo--brand"
+        aria-label="RepForge AI Home"
+      >
+        <img
+          src="../assets/images/repforge-anvil-transparent.png"
+          alt=""
+          class="nav-logo__anvil"
+          aria-hidden="true"
+        />
+        <span class="logo-text">RepForge <span>AI</span></span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="training-system.html" class="nav-link">Training System</a></li>
+        <li><a href="performance.html" class="nav-link">Performance</a></li>
+        <li><a href="recovery.html" class="nav-link">Recovery</a></li>
+        <li><a href="community.html" class="nav-link">Community</a></li>
+        <li><a href="features.html" class="nav-link">All Features</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="../index.html" class="btn btn--primary btn--sm">Back Home</a>
+      </div>
+
+      <button
+        class="nav-burger"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        id="navBurger"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="nav-progress" id="navProgress" aria-hidden="true"></div>
+  </header>
+
+  <div
+    class="mobile-nav"
+    id="mobileNav"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Navigation"
+  >
+    <button
+      class="mobile-nav__close"
+      id="mobileNavClose"
+      aria-label="Close menu"
+    >
+      ✕
+    </button>
+
+    <ul role="list">
+      <li><a href="training-system.html">Training System</a></li>
+      <li><a href="performance.html">Performance</a></li>
+      <li><a href="recovery.html">Recovery</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="features.html">All Features</a></li>
+    </ul>
+
+    <div class="mobile-nav__cta">
+      <a href="../index.html" class="btn btn--primary btn--full">Back Home</a>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <main class="legal-page">
+    <section class="legal-hero">
+      <div class="container legal-hero__inner">
+        <span class="eyebrow">Account · Data Control</span>
+
+        <h1>
+          Delete your<br />
+          <span>RepForge AI account.</span>
+        </h1>
+
+        <p class="legal-hero__lead">
+          You can permanently delete your RepForge AI account and the
+          associated account data managed by RepForge. Deletion is permanent
+          and is not the same as temporarily disabling or signing out of your
+          account.
+        </p>
+
+        <div class="legal-hero__meta">
+          <span>Permanent deletion</span>
+          <span>In-app and web request available</span>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container legal-layout">
+      <aside class="legal-toc">
+        <span>CONTENTS</span>
+        <a href="#in-app">1. Delete in the app</a>
+        <a href="#web-request">2. Request deletion online</a>
+        <a href="#deleted-data">3. What is deleted</a>
+        <a href="#retained-data">4. What may be retained</a>
+        <a href="#local-data">5. Local device data</a>
+        <a href="#after-deletion">6. After deletion</a>
+        <a href="#support">7. Support</a>
+      </aside>
+
+      <article class="legal-content">
+        <section id="in-app">
+          <span class="legal-section-number">01</span>
+          <h2>Delete your account in the app</h2>
+
+          <p>
+            If you still have access to RepForge AI, the fastest way to delete
+            your account is through the built-in account deletion flow.
+          </p>
+
+          <div class="legal-path">
+            Settings
+            <span>→</span>
+            Danger Zone
+            <span>→</span>
+            Delete account
+          </div>
+
+          <p>To complete deletion:</p>
+
+          <ul>
+            <li>Open <strong>RepForge AI</strong>.</li>
+            <li>Open <strong>Settings</strong>.</li>
+            <li>Go to the <strong>Danger Zone</strong>.</li>
+            <li>Select <strong>Delete account</strong>.</li>
+            <li>Review the warning and confirm permanent deletion.</li>
+          </ul>
+
+          <p>
+            The deletion flow removes the account rather than merely
+            deactivating, disabling or freezing it.
+          </p>
+        </section>
+
+        <section id="web-request">
+          <span class="legal-section-number">02</span>
+          <h2>Request deletion without access to the app</h2>
+
+          <p>
+            You do not need to reinstall RepForge AI in order to request
+            deletion.
+          </p>
+
+          <p>
+            If you cannot access the app, send an account deletion request to
+            RepForge AI Support using the email address associated with your
+            RepForge account whenever possible.
+          </p>
+
+          <div class="legal-contact-card">
+  <span>ACCOUNT DELETION</span>
+  <strong>Request deletion by email</strong>
+
+  <a
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=repforgeaisupport@gmail.com&su=RepForge%20AI%20account%20deletion%20request" target="_blank" rel="noopener noreferrer"
+  >
+    repforgeaisupport@gmail.com
+  </a>
+
+  <a
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=repforgeaisupport@gmail.com&su=RepForge%20AI%20account%20deletion%20request"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Open request in Gmail →
+  </a>
+</div>
+
+          <p>
+            Include enough information for us to identify the account you want
+            deleted. We may need to verify account ownership before completing
+            a deletion request in order to protect accounts from unauthorized
+            deletion.
+          </p>
+
+          <p>
+            Verification will be limited to what is reasonably necessary to
+            identify the account and confirm that the request is legitimate.
+          </p>
+        </section>
+
+        <section id="deleted-data">
+          <span class="legal-section-number">03</span>
+          <h2>What is deleted</h2>
+
+          <p>
+            When the RepForge AI account deletion process completes
+            successfully, the current deletion workflow is designed to
+            remove account-associated data including, as applicable:
+          </p>
+
+          <ul>
+            <li>Firebase Authentication account data;</li>
+            <li>cloud-synchronized workout sessions;</li>
+            <li>cloud deleted-session records;</li>
+            <li>the account's public Community profile;</li>
+            <li>profile avatar media;</li>
+            <li>Community posts authored by the account;</li>
+            <li>
+              Community photo media associated with posts authored by the
+              account;
+            </li>
+            <li>
+              Kudos given by the account and related Community notification
+              records where applicable;
+            </li>
+            <li>notifications owned by the account;</li>
+            <li>account-scoped block records;</li>
+            <li>reports submitted by the account;</li>
+            <li>Community policy-acceptance records associated with the account;</li>
+            <li>
+              local RepForge AI user data removed by the completed in-app
+              deletion flow on that device.
+            </li>
+          </ul>
+
+          <p>
+            Account deletion is intended to remove both the RepForge account
+            and the associated user data covered by the deletion process.
+          </p>
+        </section>
+
+        <section id="retained-data">
+          <span class="legal-section-number">04</span>
+          <h2>Information that may need to be retained</h2>
+
+          <p>
+            Certain limited information may need to be retained after deletion
+            when reasonably necessary for legitimate safety, security,
+            fraud-prevention, moderation, dispute-resolution or legal purposes.
+          </p>
+
+          <p>
+            For example, a Community report created by another user may need
+            to remain available where necessary to investigate abuse, preserve
+            moderation integrity or protect Community users.
+          </p>
+
+          <p>
+            Any such retention is limited to information reasonably necessary
+            for the relevant purpose and is not treated as an active public
+            RepForge Community profile or post.
+          </p>
+
+          <p>
+            Additional details are available in the
+            <a href="privacy.html#moderation-retention">RepForge AI Privacy Policy</a>.
+          </p>
+        </section>
+
+        <section id="local-data">
+          <span class="legal-section-number">05</span>
+          <h2>Local device data</h2>
+
+          <p>
+            RepForge also stores certain information locally on the device.
+          </p>
+
+          <p>
+            The completed in-app deletion flow removes RepForge user data
+            covered by that flow from the device on which deletion is
+            performed.
+          </p>
+
+          <p>
+            If you previously used RepForge on another device, locally stored
+            application data on that other device may remain until the app's
+            local storage is cleared or the application is removed from that
+            device.
+          </p>
+
+          <p>
+            Locally stored nutrition information is not part of RepForge's
+            cloud workout synchronization and may therefore need to be cleared
+            from each device where it was stored.
+          </p>
+        </section>
+
+        <section id="after-deletion">
+          <span class="legal-section-number">06</span>
+          <h2>What happens after deletion</h2>
+
+          <p>
+            Account deletion is permanent.
+          </p>
+
+          <p>
+            After your RepForge AI account has been successfully deleted:
+          </p>
+
+          <ul>
+            <li>you will no longer be able to sign in to that RepForge account;</li>
+            <li>
+              deleted cloud workout history cannot be restored through that
+              account;
+            </li>
+            <li>
+              Community content removed through the deletion process will no
+              longer be available as active content from that account;
+            </li>
+            <li>
+              you will need to create a new account if you later want to use
+              RepForge account-based features again.
+            </li>
+          </ul>
+        </section>
+
+        <section id="support">
+          <span class="legal-section-number">07</span>
+          <h2>Need help?</h2>
+
+          <p>
+            If you have difficulty accessing the deletion flow, identifying
+            your account or completing a deletion request, contact RepForge AI
+            Support.
+          </p>
+
+          <div class="legal-contact-card">
+            <span>REPFORGE AI</span>
+            <strong>Account & Privacy Support</strong>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=repforgeaisupport@gmail.com&su=RepForge%20AI%20support%20request" target="_blank" rel="noopener noreferrer">
+              repforgeaisupport@gmail.com
+            </a>
+          </div>
+
+          <p>
+            For more information about how RepForge handles personal
+            information, retention and deletion, read our
+            <a href="privacy.html">Privacy Policy</a>.
+          </p>
+        </section>
+
+        <div class="legal-audit-note">
+          <span>ACCOUNT DELETION RESOURCE</span>
+          <p>
+            This page provides an external pathway for requesting deletion of
+            a RepForge AI account without requiring access to the mobile app.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <script src="../js/nav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,follow" />
+  <meta
+    name="description"
+    content="The RepForge AI page you were looking for could not be found."
+  />
+  <title>Page Not Found — RepForge AI</title>
+  <meta name="theme-color" content="#080d0f" />
+
+  <link rel="icon" href="/assets/images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet" href="/css/mobile-accessibility.css" />
+</head>
+
+<body>
+  <header class="nav-wrapper" id="nav">
+    <nav class="nav-inner container">
+      <a href="/" class="nav-logo nav-logo--brand" aria-label="RepForge AI Home">
+        <img
+          src="/assets/images/repforge-anvil-transparent.png"
+          alt=""
+          class="nav-logo__anvil"
+          aria-hidden="true"
+        />
+        <span class="logo-text">RepForge <span>AI</span></span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="/pages/training-system.html" class="nav-link">Training System</a></li>
+        <li><a href="/pages/performance.html" class="nav-link">Performance</a></li>
+        <li><a href="/pages/recovery.html" class="nav-link">Recovery</a></li>
+        <li><a href="/pages/community.html" class="nav-link">Community</a></li>
+        <li><a href="/pages/features.html" class="nav-link">All Features</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="/" class="btn btn--primary btn--sm">Back Home</a>
+      </div>
+
+      <button
+        class="nav-burger"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        id="navBurger"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="nav-progress" id="navProgress" aria-hidden="true"></div>
+  </header>
+
+  <div
+    class="mobile-nav"
+    id="mobileNav"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Navigation"
+  >
+    <button
+      class="mobile-nav__close"
+      id="mobileNavClose"
+      aria-label="Close menu"
+    >
+      ✕
+    </button>
+
+    <ul role="list">
+      <li><a href="/pages/training-system.html">Training System</a></li>
+      <li><a href="/pages/performance.html">Performance</a></li>
+      <li><a href="/pages/recovery.html">Recovery</a></li>
+      <li><a href="/pages/community.html">Community</a></li>
+      <li><a href="/pages/features.html">All Features</a></li>
+    </ul>
+
+    <div class="mobile-nav__cta">
+      <a href="/" class="btn btn--primary btn--full">Back Home</a>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <main class="legal-page">
+    <section class="legal-hero" style="min-height:calc(100vh - 72px);display:flex;align-items:center">
+      <div class="container legal-hero__inner">
+        <span class="eyebrow">404 · Page Not Found</span>
+
+        <h1>
+          Wrong turn.<br />
+          <span>Your training is still here.</span>
+        </h1>
+
+        <p class="legal-hero__lead">
+          The page you requested does not exist, may have moved, or the link
+          may be outdated. Return to RepForge AI and keep exploring the
+          training system.
+        </p>
+
+        <div style="margin-top:1.75rem;display:flex;gap:.7rem;flex-wrap:wrap">
+          <a href="/" class="btn btn--primary btn--lg">Back to RepForge</a>
+          <a href="/pages/features.html" class="btn btn--outline btn--lg">See All Features</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/nav.js" defer></script>
+</body>
+</html>

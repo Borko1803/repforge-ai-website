@@ -1,0 +1,132 @@
+/* ================================================================
+   MOBILE / ACCESSIBILITY POLISH — RepForge AI
+   Safe tap targets, legal-page wrapping and responsive footer polish
+================================================================ */
+
+.legal-content,
+.legal-content section,
+.legal-contact-card,
+.footer__grid,
+.footer__col,
+.footer__brand {
+  min-width: 0;
+}
+
+.legal-content a,
+.legal-contact-card a,
+.legal-hero__meta a,
+.footer a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.nav-burger,
+.mobile-nav__close {
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav ul a {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.legal-contact-card a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding-block: 0.4rem;
+}
+
+.footer a:focus-visible,
+.legal-toc a:focus-visible,
+.legal-contact-card a:focus-visible,
+.legal-hero__meta a:focus-visible {
+  border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+  .legal-toc a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .legal-hero__meta a {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mobile-nav {
+    width: min(340px, 92vw);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .mobile-nav ul a {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .legal-hero__lead {
+    font-size: 0.98rem;
+  }
+
+  .legal-hero__meta {
+    align-items: stretch;
+  }
+
+  .legal-hero__meta span,
+  .legal-hero__meta a {
+    min-height: 40px;
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .legal-hero__meta a {
+    min-height: 44px;
+  }
+
+  .legal-content p {
+    font-size: 0.91rem;
+    line-height: 1.72;
+  }
+
+  .legal-content li {
+    font-size: 0.88rem;
+    line-height: 1.58;
+  }
+
+  .legal-contact-card {
+    max-width: 100%;
+  }
+
+  .legal-contact-card a {
+    width: 100%;
+  }
+
+  .footer__grid {
+    gap: 2rem;
+  }
+
+  .footer__col ul {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .footer__col a,
+  .footer__legal a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .footer__legal {
+    width: 100%;
+    gap: 0.35rem 1rem;
+  }
+}
