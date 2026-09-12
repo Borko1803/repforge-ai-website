@@ -981,7 +981,7 @@
 
 .program-showcase {
   display: grid;
-  grid-template-columns: minmax(260px, 0.72fr) minmax(500px, 1.35fr) minmax(290px, 0.83fr);
+  grid-template-columns: minmax(260px, 0.86fr) minmax(380px, 420px) minmax(290px, 0.9fr);
   gap: 1.1rem;
   align-items: start;
 }
@@ -3276,6 +3276,411 @@
     gap: 0.45rem;
   }
 }
+
+
+/* =========================================
+   PERSONAL ADAPTATION
+   ========================================= */
+
+.personal-adaptation-section {
+  position: relative;
+  padding: 7.5rem 0;
+  border-top: 1px solid var(--border-subtle);
+  background:
+    radial-gradient(circle at 78% 24%, rgba(187, 145, 52, 0.05), transparent 30rem),
+    linear-gradient(180deg, rgba(8, 13, 15, 1), rgba(10, 16, 18, 0.99));
+}
+
+.personal-adaptation__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  gap: clamp(2.6rem, 6vw, 6.5rem);
+  align-items: center;
+}
+
+.personal-adaptation__copy {
+  max-width: 760px;
+}
+
+.personal-adaptation__title {
+  margin: 1rem 0 1.35rem;
+  font-size: clamp(2.8rem, 4.55vw, 5.1rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  color: var(--text-primary);
+}
+
+.personal-adaptation__title span {
+  color: var(--forge);
+}
+
+.personal-adaptation__lead {
+  max-width: 720px;
+  font-size: 1.06rem;
+  line-height: 1.72;
+  color: var(--text-secondary);
+}
+
+.personal-adaptation__guardrail {
+  margin-top: 2rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid rgba(187, 145, 52, 0.11);
+  border-radius: 16px;
+  background: rgba(187, 145, 52, 0.022);
+}
+
+.personal-adaptation__guardrail span {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--forge);
+}
+
+.personal-adaptation__guardrail p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.personal-adaptation__model {
+  border: 1px solid rgba(151, 171, 180, 0.15);
+  border-radius: 22px;
+  padding: 1rem;
+  background: linear-gradient(180deg, rgba(17, 26, 29, 0.98), rgba(10, 16, 19, 0.99));
+  box-shadow: 0 26px 76px rgba(0,0,0,0.2);
+}
+
+.personal-adaptation-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(151, 171, 180, 0.11);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.018);
+}
+
+.personal-adaptation-step--active {
+  border-color: rgba(187, 145, 52, 0.22);
+  background: rgba(187, 145, 52, 0.04);
+}
+
+.personal-adaptation-step__index {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(151, 171, 180, 0.14);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: var(--text-tertiary);
+}
+
+.personal-adaptation-step--active .personal-adaptation-step__index {
+  border-color: rgba(187, 145, 52, 0.28);
+  color: var(--forge);
+}
+
+.personal-adaptation-step small {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--text-tertiary);
+}
+
+.personal-adaptation-step strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.personal-adaptation-step p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.personal-adaptation__connector {
+  height: 1.15rem;
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 900px) {
+  .personal-adaptation__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .personal-adaptation__model {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 640px) {
+  .personal-adaptation-section {
+    padding: 5.2rem 0;
+  }
+
+  .personal-adaptation__title {
+    font-size: clamp(2.5rem, 12.6vw, 4rem);
+  }
+
+  .personal-adaptation__lead {
+    font-size: 0.98rem;
+  }
+
+  .personal-adaptation__model {
+    border-radius: 18px;
+    padding: 0.8rem;
+  }
+
+  .personal-adaptation-step {
+    padding: 0.9rem;
+  }
+}
+
+
+
+/* =========================================
+   TRAINING SYSTEM — REAL WEEKLY PLANNER SCREEN
+   ========================================= */
+
+.program-week-card--screenshot {
+  width: 100%;
+  max-width: 420px;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.program-week-screenshot {
+  display: flex;
+  justify-content: center;
+  padding: 0.65rem 0.65rem 0;
+  background:
+    radial-gradient(circle at 50% 8%, rgba(208, 171, 94, 0.055), transparent 15rem),
+    rgba(255,255,255,0.006);
+}
+
+.program-week-screenshot img {
+  display: block;
+  width: min(100%, 360px);
+  height: auto;
+  border-radius: 17px 17px 0 0;
+  box-shadow: 0 16px 44px rgba(0,0,0,0.24);
+}
+
+.program-week-screenshot__caption {
+  padding: 0.78rem 0.95rem 0.9rem;
+  border-top: 1px solid rgba(151, 171, 180, 0.08);
+}
+
+.program-week-screenshot__caption span {
+  display: block;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--text-tertiary);
+}
+
+
+/* =========================================
+   EXERCISE VIDEO & HOW-TO
+   ========================================= */
+
+.exercise-guide-section {
+  position: relative;
+  padding: 7.2rem 0 7.8rem;
+  overflow: hidden;
+  border-top: 1px solid var(--border-subtle);
+  background:
+    radial-gradient(circle at 72% 30%, rgba(208, 171, 94, 0.05), transparent 30rem),
+    linear-gradient(180deg, #080d0f 0%, #091012 100%);
+}
+
+.exercise-guide__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.52fr);
+  gap: clamp(2rem, 5vw, 6rem);
+  align-items: end;
+  margin-bottom: 3rem;
+}
+
+.exercise-guide__intro {
+  max-width: 900px;
+}
+
+.exercise-guide__title {
+  margin: 1rem 0 1.35rem;
+  font-size: clamp(3rem, 5vw, 5.7rem);
+  line-height: 0.98;
+  letter-spacing: -0.058em;
+  color: var(--text-primary);
+}
+
+.exercise-guide__title span {
+  color: var(--forge);
+}
+
+.exercise-guide__lead {
+  max-width: 790px;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.72;
+  color: var(--text-secondary);
+}
+
+.exercise-guide__note {
+  padding: 1.15rem 1.2rem;
+  border: 1px solid rgba(208, 171, 94, 0.12);
+  border-radius: 16px;
+  background: rgba(208, 171, 94, 0.025);
+}
+
+.exercise-guide__note span {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.61rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #cdb373;
+}
+
+.exercise-guide__note p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.exercise-guide__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.45rem);
+  align-items: start;
+}
+
+.exercise-guide-phone {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(151, 171, 180, 0.14);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(17,26,29,0.97), rgba(10,16,18,0.99));
+  box-shadow: 0 28px 76px rgba(0,0,0,0.2);
+}
+
+.exercise-guide-phone::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.025);
+}
+
+.exercise-guide-phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #f7f3e8;
+}
+
+.exercise-guide-phone figcaption {
+  min-height: 76px;
+  padding: 0.95rem 1rem 1rem;
+  border-top: 1px solid rgba(151, 171, 180, 0.09);
+}
+
+.exercise-guide-phone figcaption span {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  color: var(--forge);
+}
+
+.exercise-guide-phone figcaption strong {
+  display: block;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+@media (max-width: 900px) {
+  .exercise-guide__header {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .exercise-guide__note {
+    max-width: 720px;
+  }
+
+  .exercise-guide__gallery {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    overflow-x: auto;
+    padding-bottom: 0.55rem;
+    scroll-snap-type: x proximity;
+  }
+
+  .exercise-guide-phone {
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .exercise-guide-section {
+    padding: 5.1rem 0 5.6rem;
+  }
+
+  .exercise-guide__header {
+    margin-bottom: 2rem;
+  }
+
+  .exercise-guide__title {
+    font-size: clamp(2.5rem, 12.6vw, 4rem);
+  }
+
+  .exercise-guide__lead {
+    font-size: 0.97rem;
+  }
+
+  .exercise-guide__gallery {
+    grid-template-columns: repeat(3, minmax(78vw, 1fr));
+    margin-right: calc(var(--container-pad) * -1);
+    padding-right: var(--container-pad);
+  }
+
+  .exercise-guide-phone {
+    border-radius: 20px;
+  }
+
+  .program-week-screenshot {
+    padding: 0.8rem 0.8rem 0;
+  }
+
+  .program-week-screenshot img {
+    width: min(100%, 300px);
+    border-radius: 15px 15px 0 0;
+  }
+}
+
 
 /* =========================================
    TRAINING SYSTEM PAGE HERO
