@@ -3004,7 +3004,7 @@
 }
 
 /* =========================================
-   REPFORGE HEADER BRAND MARK
+   STEELSET HEADER BRAND MARK
    ========================================= */
 
 .nav-logo--brand {
@@ -4531,7 +4531,7 @@
 }
 
 .nav-wrapper {
-  view-transition-name: repforge-nav;
+  view-transition-name: steelset-nav;
 }
 
 ::view-transition-group(root) {
@@ -4540,24 +4540,24 @@
 }
 
 ::view-transition-old(root) {
-  animation: 110ms ease-in both repforge-fade-out;
+  animation: 110ms ease-in both steelset-fade-out;
 }
 
 ::view-transition-new(root) {
-  animation: 170ms ease-out both repforge-fade-in;
+  animation: 170ms ease-out both steelset-fade-in;
 }
 
-::view-transition-old(repforge-nav),
-::view-transition-new(repforge-nav) {
+::view-transition-old(steelset-nav),
+::view-transition-new(steelset-nav) {
   animation: none;
 }
 
-@keyframes repforge-fade-out {
+@keyframes steelset-fade-out {
   from { opacity: 1; }
   to   { opacity: 0; }
 }
 
-@keyframes repforge-fade-in {
+@keyframes steelset-fade-in {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
