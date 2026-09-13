@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://repforgeai.pages.dev/sitemap.xml
+Sitemap: https://steelset.pages.dev/sitemap.xml
