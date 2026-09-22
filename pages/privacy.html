@@ -136,7 +136,7 @@
         </p>
 
         <div class="legal-hero__meta">
-          <span>Effective: August 31, 2026</span>
+          <span>Effective: September 22, 2026</span>
           <span>SteelSet</span>
           <a href="mailto:steelsetsupport@gmail.com">
             steelsetsupport@gmail.com
@@ -231,6 +231,10 @@
             <li>
               Community safety and moderation information such as reports and
               block records;
+            </li>
+            <li>
+              subscription, purchase-verification and entitlement information
+              used to determine access to SteelSet Pro;
             </li>
             <li>
               nutrition information that you enter into the local nutrition
@@ -480,6 +484,10 @@
             <li>processing Kudos and other Community interactions;</li>
             <li>supporting reporting, blocking and abuse prevention;</li>
             <li>uploading, delivering and deleting Community media;</li>
+            <li>
+              verifying Google Play subscription status and maintaining
+              SteelSet Pro access entitlements;
+            </li>
             <li>supporting account deletion;</li>
             <li>maintaining service security and reliability;</li>
             <li>responding to support and privacy requests;</li>
@@ -501,7 +509,8 @@
               <strong>Google / Firebase</strong>
               <p>
                 Used for Google Sign-In, Firebase Authentication, Firestore
-                cloud data and account-backed workout services.
+                cloud data, account-backed workout services and Google Play
+                subscription purchase verification.
               </p>
             </article>
 
@@ -517,10 +526,20 @@
               <strong>Cloudflare</strong>
               <p>
                 Used for authenticated media authorization/deletion
-                infrastructure supporting the ImageKit media flow.
+                infrastructure supporting the ImageKit media flow and for
+                authenticated server-side Google Play subscription
+                verification and SteelSet Pro access management.
               </p>
             </article>
           </div>
+
+          <p>
+            Android subscriptions are purchased through Google Play. SteelSet
+            processes subscription and purchase-verification information needed
+            to validate and maintain access to SteelSet Pro. Payment-card or
+            bank-account details used to complete a Google Play purchase are
+            handled by Google Play and are not received by SteelSet.
+          </p>
 
           <p>
             These providers process information only as necessary for the
@@ -643,6 +662,11 @@
               SteelSet account remains active;
             </li>
             <li>
+              subscription entitlement and purchase-verification records may
+              be retained while your account remains active or while reasonably
+              necessary to verify and protect subscription access;
+            </li>
+            <li>
               Community content may remain available until it is removed
               through the relevant product or account-deletion process;
             </li>
@@ -705,6 +729,8 @@
             <li>Firebase Authentication account data;</li>
             <li>cloud workout sessions;</li>
             <li>cloud deleted-session records;</li>
+            <li>SteelSet Pro subscription entitlement records;</li>
+            <li>Google Play purchase-verification claim records associated with the account;</li>
             <li>the user's public Community profile;</li>
             <li>profile avatar media;</li>
             <li>Community posts authored by the user;</li>
