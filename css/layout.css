@@ -189,6 +189,32 @@
   color: #c6d0d4;
 }
 
+/* Google Play hero CTA. Desktop positioning matches the original inline badge. */
+.hero__download {
+  margin: 22px 0 0;
+}
+
+.hero__download-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.hero__download-link img {
+  display: block;
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero__download-hint {
+  display: none;
+}
+
 /* ----------------------------------------------------------------
    HEADER BRAND
 ---------------------------------------------------------------- */
@@ -800,12 +826,40 @@
   .section { padding-block: var(--space-16); }
 
   .hero__inner {
-    padding-top: var(--space-10);
+    padding-top: var(--space-6);
     padding-bottom: var(--space-12);
   }
 
   .hero__copy {
-    gap: var(--space-6);
+    gap: var(--space-4);
+  }
+
+  /* Prioritize downloads above exploration links on mobile only. */
+  .hero__badge { order: 1; }
+  .hero__headline { order: 2; }
+  .hero__sub { order: 3; }
+  .hero__download { order: 4; }
+  .hero__actions { order: 5; }
+  .hero__proof { order: 6; }
+
+  .hero__download {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .hero__download-link {
+    width: 100%;
+    gap: 3px;
+    padding: 1px 0 5px;
+  }
+
+  .hero__download-hint {
+    display: block;
+    color: #9aa9af;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    letter-spacing: 0.015em;
   }
 
   .hero__badge {
