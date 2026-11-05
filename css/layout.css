@@ -189,6 +189,15 @@
   color: #c6d0d4;
 }
 
+
+/* Explicit hero ordering keeps desktop unchanged while allowing mobile reprioritization. */
+.hero__badge { order: 1; }
+.hero__headline { order: 2; }
+.hero__sub { order: 3; }
+.hero__actions { order: 4; }
+.hero__download { order: 5; }
+.hero__proof { order: 6; }
+
 /* Google Play hero CTA. Desktop positioning matches the original inline badge. */
 .hero__download {
   margin: 22px 0 0;
@@ -826,40 +835,45 @@
   .section { padding-block: var(--space-16); }
 
   .hero__inner {
-    padding-top: var(--space-6);
-    padding-bottom: var(--space-12);
+    padding-top: var(--space-9);
+    padding-bottom: var(--space-10);
   }
 
   .hero__copy {
-    gap: var(--space-4);
+    gap: var(--space-3);
   }
 
   /* Prioritize downloads above exploration links on mobile only. */
-  .hero__badge { order: 1; }
-  .hero__headline { order: 2; }
-  .hero__sub { order: 3; }
   .hero__download { order: 4; }
   .hero__actions { order: 5; }
-  .hero__proof { order: 6; }
 
   .hero__download {
     width: 100%;
     margin: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .hero__download-link {
-    width: 100%;
-    gap: 3px;
-    padding: 1px 0 5px;
+    width: auto;
+    max-width: none;
+    gap: 4px;
+    padding: 0;
+  }
+
+  .hero__download-link img {
+    width: 168px;
+    max-width: 168px;
+    height: auto;
   }
 
   .hero__download-hint {
     display: block;
     color: #9aa9af;
-    font-size: 0.75rem;
-    line-height: 1.4;
-    letter-spacing: 0.015em;
+    font-size: 0.73rem;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
   }
 
   .hero__badge {
@@ -868,20 +882,20 @@
   }
 
   .hero__badge-copy {
-    font-size: 0.78rem;
-    max-width: 19ch;
+    font-size: 0.76rem;
+    max-width: 18ch;
   }
 
   .hero__badge .badge {
-    font-size: 0.68rem;
+    font-size: 0.66rem;
     letter-spacing: 0.08em;
   }
 
   .hero__headline {
-    font-size: clamp(2.85rem, 12vw, 4rem);
-    max-width: 10.6ch;
-    line-height: 1.0;
-    letter-spacing: -0.052em;
+    font-size: clamp(2.45rem, 10.6vw, 3.2rem);
+    max-width: 9.3ch;
+    line-height: 0.98;
+    letter-spacing: -0.05em;
   }
 
   .hero__headline .line--1 {
@@ -889,24 +903,28 @@
   }
 
   .hero__sub {
-    font-size: 1rem;
-    line-height: 1.62;
+    font-size: 0.96rem;
+    line-height: 1.55;
   }
 
   .hero__actions {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
+    margin-top: 2px;
   }
 
   .hero__actions .btn {
     width: 100%;
     justify-content: center;
+    min-height: 52px;
+    padding: 0.92rem 1rem;
+    font-size: 0.98rem;
   }
 
   .hero__proof {
-    gap: var(--space-4);
+    gap: var(--space-3);
   }
-
 
   .nav-logo--brand .logo-text {
     font-size: 1.05rem;
@@ -6212,5 +6230,38 @@ select {
 
   .legal-provider-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .hero__inner {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-9);
+  }
+
+  .hero__headline {
+    font-size: clamp(2.2rem, 10.2vw, 2.9rem);
+    max-width: 9ch;
+  }
+
+  .hero__sub {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .hero__download-link img {
+    width: 160px;
+    max-width: 160px;
+  }
+
+  .hero__download-hint {
+    font-size: 0.71rem;
+  }
+
+  .hero__actions .btn {
+    min-height: 50px;
+    padding: 0.85rem 0.95rem;
+    font-size: 0.95rem;
   }
 }
